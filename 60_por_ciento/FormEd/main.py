@@ -32,8 +32,6 @@ if eleccion == "INSCRIBIRME":
 
             while True:
 
-                datos_usuarios = []
-
                 print("!Perfecto!")
                 print("")
                 print("Solo necesitamos unos cuantos datos tuyos")
@@ -62,11 +60,6 @@ if eleccion == "INSCRIBIRME":
                 print("")
                 print("Se agregarón nuevos datos")
                 print("")
-
-                datos_usuarios.append([u_nombre,p_nombre,s_nombre,a_paterno,a_materno,n_telefonico])
-
-                print("Se ingresarón los siguientes datos: ")
-                print(datos_usuarios)
 
                 if u_nombre != "" and p_nombre != "" and s_nombre != "" and a_paterno != "" and a_materno != "" and n_telefonico != "":
                     print("Se ha realizado el registro exitoso de los siguientes datos: ")
