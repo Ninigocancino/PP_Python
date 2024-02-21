@@ -68,6 +68,15 @@ if eleccion == "INSCRIBIRME":
                 print("Se ingresarón los siguientes datos: ")
                 print(datos_usuarios)
 
+                if u_nombre != "" and p_nombre != "" and s_nombre != "" and a_paterno != "" and a_materno != "" and n_telefonico != "":
+                    print("Se ha realizado el registro exitoso de los siguientes datos: ")
+                    print(f"Nombre de usuario: {u_nombre}")
+                    print(f"Primer nombre: {p_nombre}")
+                    print(f"Segundo nombre: {s_nombre}")
+                    print(f"Apellido paterno: {a_paterno}")
+                    print(f"Aperllido materno: {a_materno}")
+                    print(f"Telefono: {n_telefonico}")
+
                 break
     
 elif eleccion == "INSTRUCCIONES":
