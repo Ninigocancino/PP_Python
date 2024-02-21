@@ -13,8 +13,6 @@ print(" ")
 eleccion = input("Ingresa tu eleccion: ").upper()
 if eleccion == "INSCRIBIRME":
 
-    datos_usuarios = []
-
     comprobador = input("¿Listo para apartar tu lugar? (Sí), (No): ")
 
     if comprobador == "si":
@@ -33,6 +31,9 @@ if eleccion == "INSCRIBIRME":
                 escritor_csv.writerow(encabezados)
 
             while True:
+
+                datos_usuarios = []
+
                 print("!Perfecto!")
                 print("")
                 print("Solo necesitamos unos cuantos datos tuyos")
@@ -59,8 +60,13 @@ if eleccion == "INSCRIBIRME":
                 archivo_csv.close()
 
                 print("")
-
                 print("Se agregarón nuevos datos")
+                print("")
+
+                datos_usuarios.append([u_nombre,p_nombre,s_nombre,a_paterno,a_materno,n_telefonico])
+
+                print("Se ingresarón los siguientes datos: ")
+                print(datos_usuarios)
 
                 break
     
