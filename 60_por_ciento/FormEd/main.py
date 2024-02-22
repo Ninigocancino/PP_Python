@@ -99,46 +99,51 @@ if eleccion == "INSCRIBIRME":
 
             print("")
 
-            data_path_2 = "Datos_cursos"
+            data_path_2 = "Datos_cursos"          
 
             if not os.path.exists(data_path_2):
                 os.makedirs(data_path_2)
 
-                if fecha_elegida == 1 and horario_elegido == "A":
-                    name_file = "G1A_Curso_01_inscripicones.csv"
+            if fecha_elegida == 1 and horario_elegido == "A":
+                name_file = "G1A_Curso_01_inscripicones.csv"
                     
-                    archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
 
-                    with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
                         escritor_csv_2 = csv.writer(archivo_csv_2)
-
+                        
                         if archivo_csv_2.tell() == 0:
                             encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
                             escritor_csv_2.writerow(encabezados_curso_01)
                             
-                            while True:
-                                ins_user = input("Ingresa tu usuario por favor: ")
-                                ins_nombre = input("Ingresa tu nombre: ")
-                                print("¿Cémo deseas pagar tu inscripción?")
-                                print("En línea con tarjeta de credito [pulsa 1]")
-                                print("En efectivo [pulsa 2]")
+                        while True:
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
 
-                                f_pago = input("Ingresa tu forma de pago: ")
-                                escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+                            f_pago = input("Ingresa tu forma de pago: ")
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
 
-                                archivo_csv_2.close()
+                            archivo_csv_2.close()
 
-                                print("Felicidades has apartado tu lugar")
+                            print("Felicidades has apartado tu lugar")
+                            print("")
 
-                                break
+                            print("Debes completar tu registro antes del 08 de marzo")
+                            print("")
 
-                elif fecha_elegida == 1 and horario_elegido == "B":
+                            print("Datos del curso \n Fecha: 10 de marzo \n Ubicación: Online")
 
-                    name_file = "G1B_Curso_01_inscripicones.csv"
+                            break
+
+            elif fecha_elegida == 1 and horario_elegido == "B":
+                name_file = "G1B_Curso_01_inscripicones.csv"
                             
-                    archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
 
-                    with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
                         escritor_csv_2 = csv.writer(archivo_csv_2)
 
                         if archivo_csv_2.tell() == 0:
@@ -158,6 +163,13 @@ if eleccion == "INSCRIBIRME":
                             archivo_csv_2.close()
 
                             print("Felicidades has apartado tu lugar")
+                            print("")
+
+                            print("Debes completar tu registro antes del 08 de marzo")
+                            print("")
+
+                            print("Datos del curso \n Fecha: 10 de marzo \n Ubicación: Online")
+
 
                             break
 
