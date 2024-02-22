@@ -12,6 +12,8 @@ print((" ") * 27, "[INSCRIBIRME]", (" ") * 5, "[SALIR]", (" ") * 5, "[INSTRUCCIO
 print(" ")
 eleccion = input("Ingresa tu eleccion: ").upper()
 if eleccion == "INSCRIBIRME":
+    
+    #Creación de la cuenta del usuario
 
     comprobador = input("¿Listo para apartar tu lugar? (Sí), (No): ")
 
@@ -71,6 +73,64 @@ if eleccion == "INSCRIBIRME":
                     print(f"Telefono: {n_telefonico}")
 
                 break
+
+            print("")
+            print("Ahora apartemos tu lugar en el curso")
+            print("")
+
+            print("Fechas disponibles: ")
+            print(" Grupo: 1, 10 de marzo de 2024")
+            print(" Grupo: 2, 20 de marzo de 2024")
+            print(" Grupo: 3, 05 de abril de 2024")
+            print("")
+
+            fecha_elegida = int(input("Ingresa el número del grupo al que deseas inscribite: "))
+
+            print("")
+            print("Ahora elige el horario deseado")
+            print("")
+
+            print(" 1, 08:00 am -> 10:00 am")
+            print(" 2, 12:00 pm -> 02:00 pm")
+            print(" 3, 06:00 pm -> 08:00 pm")
+            print("")
+
+            horario_elegido = int(input("Ingresa el número del horario en el que deseas inscribirte: "))
+
+            print("")
+
+            if fecha_elegida == 1 and horario_elegido == 1:
+
+                data_path_2 = "Datos_cursos"
+                archivo_csv_path_2 = os.path.join(data_path_2, "Curso_01_inscripciones.csv")
+
+                if not os.path.exists(data_path_2):
+                    os.makedirs(data_path_2)
+
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                    escritor_csv_2 = csv.writer(archivo_csv_2)
+
+                    if archivo_csv_2.tell() == 0:
+                        encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
+                        escritor_csv_2.writerow(encabezados_curso_01)
+
+                        while True:
+
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
+
+                            f_pago = input("Ingresa tu forma de pago: ")
+
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+
+                            archivo_csv_2.close()
+
+                            print("Felicidades has apartado tu lugar")
+
+                            break
     
 elif eleccion == "INSTRUCCIONES":
     print("Mostrar insturcciones")
