@@ -137,7 +137,7 @@ if eleccion == "INSCRIBIRME":
                             print("Datos del curso \n Fecha: 10 de marzo \n Ubicación: Online")
 
                             break
-
+            
             elif fecha_elegida == 1 and horario_elegido == "B":
                 name_file = "G1B_Curso_01_inscripicones.csv"
                             
@@ -170,12 +170,249 @@ if eleccion == "INSCRIBIRME":
 
                             print("Datos del curso \n Fecha: 10 de marzo \n Ubicación: Online")
 
+                            break
+
+            elif fecha_elegida == 1 and horario_elegido == "C":
+                name_file = "G1C_Curso_01_inscripicones.csv"
+                            
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                        escritor_csv_2 = csv.writer(archivo_csv_2)
+
+                        if archivo_csv_2.tell() == 0:
+                            encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
+                            escritor_csv_2.writerow(encabezados_curso_01)
+                            
+                        while True:
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
+
+                            f_pago = input("Ingresa tu forma de pago: ")
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+
+                            archivo_csv_2.close()
+
+                            print("Felicidades has apartado tu lugar")
+                            print("")
+
+                            print("Debes completar tu registro antes del 08 de marzo")
+                            print("")
+
+                            print("Datos del curso \n Fecha: 10 de marzo \n Ubicación: Online")
 
                             break
 
 
+            elif fecha_elegida == 2 and horario_elegido == "A":
+                name_file = "G2A_Curso_01_inscripicones.csv"
+                    
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                        escritor_csv_2 = csv.writer(archivo_csv_2)
+                        
+                        if archivo_csv_2.tell() == 0:
+                            encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
+                            escritor_csv_2.writerow(encabezados_curso_01)
+                            
+                        while True:
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
+
+                            f_pago = input("Ingresa tu forma de pago: ")
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+
+                            archivo_csv_2.close()
+
+                            print("Felicidades has apartado tu lugar")
+                            print("")
+
+                            print("Debes completar tu registro antes del 16 de marzo")
+                            print("")
+
+                            print("Datos del curso \n Fecha: 20 de marzo \n Ubicación: Online")
+
+                            break
+
+            elif fecha_elegida == 2 and horario_elegido == "B":
+                name_file = "G2B_Curso_01_inscripicones.csv"
+                            
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                        escritor_csv_2 = csv.writer(archivo_csv_2)
+
+                        if archivo_csv_2.tell() == 0:
+                            encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
+                            escritor_csv_2.writerow(encabezados_curso_01)
+                            
+                        while True:
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
+
+                            f_pago = input("Ingresa tu forma de pago: ")
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+
+                            archivo_csv_2.close()
+
+                            print("Felicidades has apartado tu lugar")
+                            print("")
+
+                            print("Debes completar tu registro antes del 16 de marzo")
+                            print("")
+
+                            print("Datos del curso \n Fecha: 20 de marzo \n Ubicación: Online")
 
 
+                            break
+            
+            elif fecha_elegida == 2 and horario_elegido == "C":
+                name_file = "G2C_Curso_01_inscripicones.csv"
+                            
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                        escritor_csv_2 = csv.writer(archivo_csv_2)
+
+                        if archivo_csv_2.tell() == 0:
+                            encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
+                            escritor_csv_2.writerow(encabezados_curso_01)
+                            
+                        while True:
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
+
+                            f_pago = input("Ingresa tu forma de pago: ")
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+
+                            archivo_csv_2.close()
+
+                            print("Felicidades has apartado tu lugar")
+                            print("")
+
+                            print("Debes completar tu registro antes del 08 de marzo")
+                            print("")
+
+                            print("Datos del curso \n Fecha: 10 de marzo \n Ubicación: Online")
+
+                            break
+
+            elif fecha_elegida == 3 and horario_elegido == "A":
+                name_file = "G3A_Curso_01_inscripicones.csv"
+                    
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                        escritor_csv_2 = csv.writer(archivo_csv_2)
+                        
+                        if archivo_csv_2.tell() == 0:
+                            encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
+                            escritor_csv_2.writerow(encabezados_curso_01)
+                            
+                        while True:
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
+
+                            f_pago = input("Ingresa tu forma de pago: ")
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+
+                            archivo_csv_2.close()
+
+                            print("Felicidades has apartado tu lugar")
+                            print("")
+
+                            print("Debes completar tu registro antes del 30 de marzo")
+                            print("")
+
+                            print("Datos del curso \n Fecha: 05 de abril \n Ubicación: Online")
+
+                            break
+
+            elif fecha_elegida == 3 and horario_elegido == "B":
+                name_file = "G3B_Curso_01_inscripicones.csv"
+                            
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                        escritor_csv_2 = csv.writer(archivo_csv_2)
+
+                        if archivo_csv_2.tell() == 0:
+                            encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
+                            escritor_csv_2.writerow(encabezados_curso_01)
+                            
+                        while True:
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
+
+                            f_pago = input("Ingresa tu forma de pago: ")
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+
+                            archivo_csv_2.close()
+
+                            print("Felicidades has apartado tu lugar")
+                            print("")
+
+                            print("Debes completar tu registro antes del 30 de marzo")
+                            print("")
+
+                            print("Datos del curso \n Fecha: 05 de abril \n Ubicación: Online")
+
+
+                            break
+            
+            elif fecha_elegida == 3 and horario_elegido == "C":
+                name_file = "G3C_Curso_01_inscripicones.csv"
+                            
+                archivo_csv_path_2 = os.path.join(data_path_2, name_file)
+
+                with open(archivo_csv_path_2, 'a', newline='') as archivo_csv_2:
+                        escritor_csv_2 = csv.writer(archivo_csv_2)
+
+                        if archivo_csv_2.tell() == 0:
+                            encabezados_curso_01 = ["usuario", "Nombre", "Forma_pago"]
+                            escritor_csv_2.writerow(encabezados_curso_01)
+                            
+                        while True:
+                            ins_user = input("Ingresa tu usuario por favor: ")
+                            ins_nombre = input("Ingresa tu nombre: ")
+                            print("¿Cémo deseas pagar tu inscripción?")
+                            print("En línea con tarjeta de credito [pulsa 1]")
+                            print("En efectivo [pulsa 2]")
+
+                            f_pago = input("Ingresa tu forma de pago: ")
+                            escritor_csv_2.writerow([ins_user,ins_nombre, f_pago])
+
+                            archivo_csv_2.close()
+
+                            print("Felicidades has apartado tu lugar")
+                            print("")
+
+                            print("Debes completar tu registro antes del 30 de marzo")
+                            print("")
+
+                            print("Datos del curso \n Fecha: 05 de abril \n Ubicación: Online")
+
+                            break
+                                                
 elif eleccion == "INSTRUCCIONES":
     print("Mostrar insturcciones")
 else:
