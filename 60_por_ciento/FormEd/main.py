@@ -414,6 +414,22 @@ if eleccion == "INSCRIBIRME":
                             break
                                                 
 elif eleccion == "INSTRUCCIONES":
-    print("Mostrar insturcciones")
+    print("Sigue los siguientes pasos para apartar tu lugar: ")
+    print("")
+    print("Paso 1: \n Elige la opción 'Inscribirme' para ello debes escribir la palabra 'Inscribirme' en el prompt y dar enter")
+    print("")
+    print("Paso 2: \n Crea una cuenta. Después de ingresar a través de la instrucción 'Inscribirme' confirma que estás listo para apartar tu lugar en el curso escribiendo la instrucción 'si' puedes hacerlo en mayúsculas, minúsculas o con o sin acento")
+    print("")
+    print("Paso 3: \n Ingresa los datos necesarios para crear una cuenta. Al terminar de ingresar tus datos recibirás una confirmación de los datos ingresados")
+    print("")
+    print("Paso 4: \n Elige la fecha y hora en la que deseas tomar el curso. Para ello deberás ingresar el número de la opción que se ajuste mejor a tu agenda (1,2,3) tenemos tres fechas disponibles para tomar el curso, después elige una de las opciones de horario disponibles para cada fecha (A,B,C)")
+    print("")
+    print("Paso 5: \n Al terminar el registro de datos recibirás un mensaje de confirmación con un resumen de la información ingresada y los datos para completar la inscripción, en este punto tu lugar esta apartado y deberás completar el registro antes plazo limite para no perder tu lugar, ya que tenemos cupos limitados")
+    print("")
+    print("Paso 5A: \n Si eliges la opción de pago 'tarjeta de credito' puedes completar tu inscripción de forma inmediata realizando el pago en la misma sesión")
+    print("")
+    print("Paso 5B: \n Si optas por pago en efectivo verás un mensaje con los datos ncesarios para realizar el pago y un enlace al que deberás ingresar despues de realizar el pago para ingresar el comprobante y verificar si tu  inscripción ha sido completada")
+    print("")
+    print("Paso 6: \n Nos veremos durante en curso para ayudarte a dominar el tema")
 else:
     exit()
