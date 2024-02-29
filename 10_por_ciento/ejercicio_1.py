@@ -16,3 +16,41 @@ El precio de la gasolina a la fecha de tu salida es de $25 por litro.
 
 #Calcula el gasto total de cada opción para elegir el más económico
 #Muestra eld esarrollo del problema al usuario usando print
+
+
+print("Datos analisis 1: ")
+
+distancia_1 = 130
+c_c_1 = 18
+precio_gas = 25
+
+#Calcular el consumo total
+
+consumo_t_1 = c_c_1 * distancia_1
+print(consumo_t_1)
+
+#Calcular costo total:
+
+gasto_t = consumo_t_1 * precio_gas
+
+print("Datos analisis 2: ")
+
+distancia_2 = 100
+c_c_2 = 10
+peaje_2 = 250
+
+#Calcular el cnsumo total de combustible:
+
+consumo_t_2 = c_c_2 * distancia_2
+print(consumo_t_2)
+
+#Calcular costo total:
+
+gasto_t_2 = consumo_t_2 * precio_gas
+gasto_t_2 = gasto_t_2 + peaje_2
+
+print("")
+print("Resultados")
+print("")
+print(f"Camino 1 = {gasto_t}")
+print(f"Camino 2 = {gasto_t_2}")
