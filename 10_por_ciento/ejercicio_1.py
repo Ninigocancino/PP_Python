@@ -24,10 +24,20 @@ distancia_1 = 130
 c_c_1 = 18
 precio_gas = 25
 
-#Calcular el consumo total
+print("")
+print(f"Distancia: {distancia_1}")
+print(f"Consumo del vehiculo (k/L): {c_c_1}")
+print(f"Costo del combustible por litro: {precio_gas}")
+print("")
+
+
+print("Primero debemos calcular el consumo total de combustible:")
 
 consumo_t_1 = c_c_1 * distancia_1
-print(consumo_t_1)
+
+print(f"Multiplicaremos el consumo estimado del vehiculo ({c_c_1}) x los kilometros del camino 1: {distancia_1}")
+print(f"Obtenemos como resultado que el consumo total para esta opción es: {consumo_t_1} litros por kilometro")
+print("")
 
 #Calcular costo total:
 
