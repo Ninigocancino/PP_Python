@@ -16,3 +16,11 @@ Instrucciones:
 3) Permite al sistema recibir entradas del usuario
 4) Devuelve al usuario un mensaje que le ayude a realizar la siguiente acción
 """
+
+"""
+Elementos de prueba:
+
+1) Paquete de atún (50 latas)
+2) Bajilla de cristal (200 piezas)
+3) Saco e arroz 60 kilos
+"""
