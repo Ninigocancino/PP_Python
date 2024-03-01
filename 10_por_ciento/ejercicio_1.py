@@ -35,12 +35,13 @@ print("Primero debemos calcular el consumo total de combustible:")
 
 consumo_t_1 = c_c_1 * distancia_1
 
-print(f"Multiplicaremos el consumo estimado del vehiculo ({c_c_1}) x los kilometros del camino 1: {distancia_1}")
-print(f"Obtenemos como resultado que el consumo total para esta opción es: {consumo_t_1} litros por kilometro")
+print(f"Para ello multiplicaremos el consumo estimado del vehiculo que es ({c_c_1}) LK por los kilometros del camino 1 que equivalen a: {distancia_1} km")
+print(f"Entonces obtenemos como resultado que el consumo total para esta opción es de: {consumo_t_1} litros por kilometro")
 print("")
 
-#Calcular costo total:
-
+print("Ahora debemos calcular el costo total del viaje")
+print(f"Para lo cual debemos simplemente multiplicar el consumo total de combustible durante el viaje por el precio del combustible (en litros) que es de ${precio_gas}")
+print("")
 gasto_t = consumo_t_1 * precio_gas
 
 print("Datos analisis 2: ")
@@ -49,18 +50,31 @@ distancia_2 = 100
 c_c_2 = 10
 peaje_2 = 250
 
-#Calcular el cnsumo total de combustible:
+print("")
+print(f"Distancia: {distancia_2}")
+print(f"Consumo del vehiculo (k/L): {c_c_2}")
+print(f"Costo de peaje: ${peaje_2}")
+print(f"Costo del combustible por litro: {precio_gas}")
+print("")
+
+print("Calculamos el consumo total de combustible:")
 
 consumo_t_2 = c_c_2 * distancia_2
-print(consumo_t_2)
 
-#Calcular costo total:
+print(f"Para ello multiplicaremos el consumo estimado del vehiculo que es ({c_c_2}) LK, por los kilometros del camino 2 que equivalen a: {distancia_2} km")
+print(f"Entonces obtenemos como resultado que el consumo total para esta opción es de: {consumo_t_2} litros por kilometro")
+print("")
+
+print("Ahora debemos calcular costo total del viaje")
 
 gasto_t_2 = consumo_t_2 * precio_gas
 gasto_t_2 = gasto_t_2 + peaje_2
 
+print(f"Para lo cual debemos simplemente multiplicar el consumo total de combustible durante el viaje por el precio del combustible (en litros) que es de ${precio_gas} y sumar el costo del peaje del camino")
 print("")
-print("Resultados")
+
 print("")
-print(f"Camino 1 = {gasto_t}")
-print(f"Camino 2 = {gasto_t_2}")
+print("De esta forma obtenemos como resultados que ...")
+print("")
+print(f"El viaje por el camino 1 tendrá un costo total de = ${gasto_t}")
+print(f"Y el viaje por el camino 2 tendrá un costo total de  = ${gasto_t_2}")
