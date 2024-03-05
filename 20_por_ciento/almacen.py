@@ -11,7 +11,7 @@ Después debes llevar el articulo al anaquel y confirmar en el sistema que el ar
 """
 Instrucciones:
 
-1) Crea 6 categorias de anaqueles ("enlatados","granos","Cajas","Limpieza","Electronicos","Fragiles")
+1) Crea 6 categorias de anaqueles ("enlatados","granos","Cajas","Limpieza","Electronicos","Vidrio")
 2) Divide el espacio vertical del anaquel  en 5 niveles que correpondan con el tamaño del articulo ("Muy grande","Grande","Mediano","Puequeños" y "Muy pequeños")
 3) Permite al sistema recibir entradas del usuario
 4) Devuelve al usuario un mensaje que le ayude a realizar la siguiente acción
@@ -61,4 +61,12 @@ a_6 = [
     {"fila 3":{"columna 1": "V", "columna 2": "V", "columna 3": "V"}}
 ]
 
-print(a_1)
+print("Esta sucursal puede almacenar solo este tipo de articulos: \n Enlatados (1) \n Granos (2) \n Limpieza (3) \n Electronicos (4) \n Vidrio (5) \n Cajas (6)")
+print("")
+articulo = int(input("¿Qué tipo de articulo necesitas guardar (ingresa el número asignado a la opción correspondiente): "))
+print("")
+print("Tamaños para guardar articulos: \n Muy Grande (1) \n Grande (2) \n Mediano (3) \n pequeño (4) \n Muy pequeño (5)")
+size = int(input("Ingrese el tamaño del articulo: "))
+
+
+
