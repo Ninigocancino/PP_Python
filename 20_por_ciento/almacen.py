@@ -55,4 +55,10 @@ a_5 = [
     {"fila 3":{"columna 1": "V", "columna 2": "V", "columna 3": "V"}}
 ]
 
+a_6 = [
+    {"fila 1":{"columna 1": "O", "columna 2": "V", "columna 3": "V"}},
+    {"fila 2":{"columna 1": "V", "columna 2": "O", "columna 3": "V"}},
+    {"fila 3":{"columna 1": "V", "columna 2": "V", "columna 3": "V"}}
+]
+
 print(a_1)
