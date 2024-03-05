@@ -28,7 +28,7 @@ Elementos de prueba:
 a_1 = [
     {"fila 1":{"columna 1": "O", "columna 2": "V", "columna 3": "V"}},
     {"fila 2":{"columna 1": "V", "columna 2": "O", "columna 3": "V"}},
-    {"fila 3":{"columna 1": "V", "columna 2": "V", "columna 3": "V"}}
+    {"fila 3":{"columna 1": "O", "columna 2": "V", "columna 3": "O"}}
 ]
 
 a_2 = [
@@ -68,5 +68,17 @@ print("")
 print("Tamaños para guardar articulos: \n Muy Grande (1) \n Grande (2) \n Mediano (3) \n pequeño (4) \n Muy pequeño (5)")
 size = int(input("Ingrese el tamaño del articulo: "))
 
+if articulo == 1 and size == 1:
+    disponibilidad = "V"
 
+    lista_elegida = a_1
+
+    elementos_coincidentes_fila_3 = [
+    {fila: columna for fila, columna in diccionario.items() if fila == "fila 3" and columna == disponibilidad}
+    for diccionario in lista_elegida
+    ]
+
+    elementos_coincidentes_fila_3 = [elemento for elemento in elementos_coincidentes_fila_3 if elemento]
+
+    print(elementos_coincidentes_fila_3)
 
