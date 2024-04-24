@@ -2,8 +2,9 @@
 
 Contemplamos que para adquirir un dominio del lenguaje Python debes ser capaz de realizar las siguientes acciones:
 
-Utilizar estructuras de control como bucles (for, while) y condicionales (if, else).
+
 Manipular listas y acceder a sus elementos.
+Utilizar estructuras de control como bucles (for, while) y condicionales (if, else).
 Utilizar la función range() para generar secuencias numéricas.
 
 Y alcanzar los siguientes hitos:
