@@ -32,3 +32,10 @@ for i in range(0,21):
         print(i)
 
 
+#Ejercicio 05: Toma la lista ciudades y conbierte cada elemento a mayúsculas
+
+print("")
+
+for i in ciudades:
+    mayusculas = i.upper()
+    print(mayusculas)
