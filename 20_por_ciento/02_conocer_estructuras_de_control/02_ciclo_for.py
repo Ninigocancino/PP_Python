@@ -3,8 +3,11 @@
 ciudades = ['Bogota','Cali','México','Paris']
 lugar = {'Ciudad':'Ciudad de México', 'País' : 'México'}
 palabra = ['Perro']
+nombres = ['Julio','Marco', 'Sandra', 'Felipe','María']
 
-# Ejercicio 01: Dada una lista, recorre cada elemento de la lista
+#BÁSICO
+
+# Ejercicio 01: Usa la lista ciudades y recorre cada elemento de la lista
 
 for i in ciudades:
     print(i)
