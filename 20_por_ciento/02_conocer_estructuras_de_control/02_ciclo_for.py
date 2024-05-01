@@ -23,3 +23,9 @@ palabra = ['Perro']
 
 for i in palabra[0]:
     print(i)
+
+#Ejercicio 04: En un rango de 0 a 20 imprime todo los numeros que sean pares
+print("")
+for i in range(0,21):
+    if i % 2 == 0:
+        print(i)
