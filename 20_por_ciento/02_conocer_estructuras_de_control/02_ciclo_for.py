@@ -8,10 +8,21 @@ nombres = ['Julio','Marco', 'Sandra', 'Felipe','María']
 #BÁSICO
 
 # Ejercicio 01: Usa la lista ciudades y recorre cada elemento de la lista
+print("")
+print("NIVEL BÁSICO DE CICLO FOR")
+print("Ejercicio 01: Ciudades")
+
 
 for i in ciudades:
     print(i)
 
+#Ejericio 02: Usa la lista nombres y recorre cada elemento
+print("")
+print("Ejercicio 02: Nombres")
+
+
+for nombre in nombres:
+    print(nombre)
 
 # Ejercicio 02: Dado un diccionario recorre cada uno de sus elementos e imprime por separado las clave y los valores del iterable
 print("")
