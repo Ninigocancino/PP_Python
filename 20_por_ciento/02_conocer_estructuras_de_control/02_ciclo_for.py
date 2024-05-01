@@ -4,6 +4,7 @@ ciudades = ['Bogota','Cali','México','Paris']
 lugar = {'Ciudad':'Ciudad de México', 'País' : 'México'}
 palabra = ['Perro']
 nombres = ['Julio','Marco', 'Sandra', 'Felipe','María']
+paises = ['México','Sudafrica','Canada','Colombia','Cuba']
 
 #BÁSICO
 
@@ -24,7 +25,14 @@ print("Ejercicio 02: Nombres")
 for nombre in nombres:
     print(nombre)
 
-# Ejercicio 02: Dado un diccionario recorre cada uno de sus elementos e imprime por separado las clave y los valores del iterable
+
+#Ejercicio 03: Usa la lista paises y recorrela en busca del elemento 'México', si el valor se encuentra en la lista imprime un mensaje descriptivo en consola
+print("")
+for i in paises:
+    if i == 'México':
+        print("Mexico está en la lista")
+
+# Ejercicio 03: Usa el diccionario 'lugar' y recorre cada uno de sus elementos e imprime por separado las clave y los valores del iterable
 print("")
 
 for clave in lugar:
@@ -32,21 +40,21 @@ for clave in lugar:
 for valor in lugar.values():
     print(valor)
 
-#Ejercicio 03: Crea una lista con un solo elemento, luego recorre el elemento para imprimir en consola cada letra
+#Ejercicio 04: Crea una lista con un solo elemento, luego recorre el elemento para imprimir en consola cada letra
 
 print("")
 
 for i in palabra[0]:
     print(i)
 
-#Ejercicio 04: En un rango de 0 a 20 imprime todo los numeros que sean pares
+#Ejercicio 05: En un rango de 0 a 20 imprime todo los numeros que sean pares
 print("")
 for i in range(0,21):
     if i % 2 == 0:
         print(i)
 
 
-#Ejercicio 05: Toma la lista ciudades y conbierte cada elemento a mayúsculas
+#Ejercicio 06: Toma la lista ciudades y conbierte cada elemento a mayúsculas
 
 print("")
 
