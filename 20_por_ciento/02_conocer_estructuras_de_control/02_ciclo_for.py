@@ -33,6 +33,13 @@ for clave in lugar:
 for valor in lugar.values():
     print(valor)
 
+# Ejercicio 04(Paises): Usa la lista 'Paises' y recorre cada elemento
+print("")
+print("*"*10)
+print("EJERCICIO 04: PAISES")
+for i in paises:
+    print(i)
+
 #RECORRIENDO SOBRE UN ELEMENTO
 
 #Ejercicio 04: Crea una lista con un solo elemento, luego recorre el elemento para imprimir en consola cada letra
