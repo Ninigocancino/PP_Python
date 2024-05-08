@@ -6,27 +6,35 @@ palabra = ['Perro']
 nombres = ['Julio','Marco', 'Sandra', 'Felipe','María']
 paises = ['México','Sudafrica','Canada','Colombia','Cuba']
 
+
+
 #RECORRER E IMPRIMIR VALORES
 
-# Ejercicio 01: Usa la lista ciudades y recorre cada elemento de la lista
-print("")
 print("NIVEL BÁSICO DE CICLO FOR")
-print("Ejercicio 01: Ciudades")
+print("PRACTICA 01: RECORRER E IMPRIMIR VALORES")
+print("")
 
+# Ejercicio 01(ciudades): Usa la lista ciudades y recorre cada elemento de la lista
+print("*"*20)
+print("EJERICICIO 01: CIUDADES")
 
 for i in ciudades:
     print(i)
 
-#Ejericio 02: Usa la lista nombres y recorre cada elemento
 print("")
-print("Ejercicio 02: Nombres")
 
+#Ejericio 02(nombres): Usa la lista nombres y recorre cada elemento
+print("*"*20)
+print("EJERCICIO 02: NOMBRES")
 
 for nombre in nombres:
     print(nombre)
 
-# Ejercicio 03: Usa el diccionario 'lugar' y recorre cada uno de sus elementos e imprime por separado las clave y los valores del iterable
 print("")
+
+# Ejercicio 03: Usa el diccionario 'lugar' y recorre cada uno de sus elementos e imprime por separado las clave y los valores del iterable
+print("*"*20)
+print("EJERCICIO 03: LUGARES")
 
 for clave in lugar:
     print(clave)
@@ -39,6 +47,8 @@ print("*"*10)
 print("EJERCICIO 04: PAISES")
 for i in paises:
     print(i)
+
+
 
 #RECORRIENDO SOBRE UN ELEMENTO
 
