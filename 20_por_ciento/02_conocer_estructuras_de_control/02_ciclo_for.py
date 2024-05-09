@@ -5,7 +5,7 @@ lugar = {'Ciudad':'Ciudad de México', 'País' : 'México'}
 palabra = ['Perro']
 nombres = ['Julio','Marco', 'Sandra', 'Felipe','María']
 paises = ['México','Sudafrica','Canada','Colombia','Cuba']
-
+animales = ['Zorro','Canguro','León','Caballo']
 
 
 #RECORRER E IMPRIMIR VALORES
@@ -43,11 +43,20 @@ for valor in lugar.values():
 
 # Ejercicio 04(Paises): Usa la lista 'Paises' y recorre cada elemento
 print("")
-print("*"*10)
+print("*"*20)
 print("EJERCICIO 04: PAISES")
 for i in paises:
     print(i)
 
+# Ejercicio 05(animales): Usa la lista animales y recorre cada elemento
+print("")
+print("*"*20)
+print("EJERCICIO 05:ANIMALES")
+
+for i in animales:
+    print(i)
+
+print("")
 
 
 #RECORRIENDO SOBRE UN ELEMENTO
