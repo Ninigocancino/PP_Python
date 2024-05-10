@@ -61,11 +61,23 @@ print("")
 
 #RECORRIENDO SOBRE UN ELEMENTO
 
-#Ejercicio 04: Crea una lista con un solo elemento, luego recorre el elemento para imprimir en consola cada letra
+#Ejercicio 06: Crea una lista con un solo elemento, luego recorre el elemento para imprimir en consola cada letra
 
-print("")
+print("*"*20)
+print("EJERCICIO 06: PALABRA")
 
 for i in palabra[0]:
+    print(i)
+
+print("")  
+
+# Ejercicio 07(variable): Recorre el valor de una variable
+print("*"*20)
+print("EJERCICIO 07: RECORRER ELEMENTO DE VARIABLE")
+
+palabra_01 = "letra"
+
+for i in palabra_01:
     print(i)
 
 
