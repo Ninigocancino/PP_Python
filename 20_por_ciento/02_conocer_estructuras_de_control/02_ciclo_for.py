@@ -80,6 +80,17 @@ palabra_01 = "letra"
 for i in palabra_01:
     print(i)
 
+print("")
+
+#Ejercicio 08(nombres): Usa la lista 'nombres' y recorre el elemento de la posición 2
+
+print("*"*20)
+print("EJERCICIO 08: RECORRE UN ELEMENTO DE LA LISTA NOMBRES")
+
+for i in nombres[2]:
+    print(i)
+
+print("")
 
 #USAR RANGOS
 
