@@ -1,6 +1,6 @@
 
 #Recursos
-ciudades = ['Bogota','Cali','México','Paris']
+ciudades = ['Bogota','Cali','México','Paris','Atenas']
 lugar = {'Ciudad':'Ciudad de México', 'País' : 'México'}
 palabra = ['Perro']
 nombres = ['Julio','Marco', 'Sandra', 'Felipe','María']
@@ -88,6 +88,16 @@ print("*"*20)
 print("EJERCICIO 08: RECORRE UN ELEMENTO DE LA LISTA NOMBRES")
 
 for i in nombres[2]:
+    print(i)
+
+print("")
+
+#Ejercicio 09: Usa la lista 'ciudades' y recorre l elemnto de la posición 4
+
+print("*"*20)
+print("EJERCICIO 09: RECORRER UN ELEMENTO DE LA LISTA 'CIUDADES' ")
+
+for i in ciudades[4]:
     print(i)
 
 print("")
