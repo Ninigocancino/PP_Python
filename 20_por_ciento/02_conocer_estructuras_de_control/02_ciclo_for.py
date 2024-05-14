@@ -144,10 +144,14 @@ print("")
 #USANDO IF
 
 #Ejercicio 14: Usa la lista paises y recorrela en busca del elemento 'México', si el valor se encuentra en la lista imprime un mensaje descriptivo en consola
-print("")
+print("*"*20)
+print("EJERCICIO 14: vALIDACIÓN DE VALOR EXISTENTE EN LA LISTA PAISES")
+
 for i in paises:
     if i == 'México':
         print("Mexico está en la lista")
+
+print("")
 
 #Ejercicio 15: En un rango de 0 a 20 imprime todo los numeros que sean pares
 print("*"*20)
