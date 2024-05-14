@@ -161,7 +161,22 @@ for i in range(0,21):
     if i % 2 == 0:
         print(i)
 
+print("")
 
+#Ejercicio 16: Usa la lista animales y niega que 'Canguro' se encuentre en la lista. Luego imprime '____ está en la lista' para cada animal que no hayas negado y para canguro 'este animal no esta en la lista'
+print("*"*20)
+print("EJERCICIO 16: NIEGA QUE UN ANIMAL ESTE EN LA LISTA")
+
+for i in animales:
+    if not i == 'Canguro':
+        print(f"{i} está en la lista")
+    else:
+        print("este animal no está en la lista")
+
+print("")
+print(animales)
+
+print("")
 #CICLOS ANIDADOS
 
 #USAR CONTINUE Y BREAK
