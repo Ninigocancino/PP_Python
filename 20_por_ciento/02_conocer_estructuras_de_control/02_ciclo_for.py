@@ -130,6 +130,16 @@ for i in range(0,100,10):
 
 print("")
 
+#Ejercicio 13: Crea un rango del 5 al 200 con incrementos de 5, luego eleva al cuadrado cada elemento
+print("*"*20)
+print("EJERCICIO 13: RANGOCON INCREMENTO Y OPERACIÓN MATEMATICA")
+
+for i in range(5,200,5):
+    i = i**2
+    print(i)
+
+print("")
+
 #Ejercicio : En un rango de 0 a 20 imprime todo los numeros que sean pares
 print("*"*20)
 print("EJERCICIO 11: RECORRE LOS NÚMERO PARES DE UN RANGO DE 0 A 20")
