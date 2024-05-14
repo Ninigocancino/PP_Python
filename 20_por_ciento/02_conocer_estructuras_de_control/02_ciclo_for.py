@@ -112,13 +112,25 @@ for i in range(0,5):
 
 print("")
 
-#Ejercicio 11: En un rango de 0 a 20 imprime todo los numeros que sean pares
+#Ejercicio 11: Crea un rango de 0 a 5 e imprimelo
+
+print("*"*20)
+print("EJERCICIO 12: CREAR UN RANGO E IMPRIMIRLO")
+
+for i in range(0,5):
+    print(i)
+
+print("")
+
+
+#Ejercicio 12: En un rango de 0 a 20 imprime todo los numeros que sean pares
 print("*"*20)
 print("EJERCICIO 11: RECORRE LOS NÚMERO PARES DE UN RANGO DE 0 A 20")
 
 for i in range(0,21):
     if i % 2 == 0:
         print(i)
+
 
 
 #USANDO IF
