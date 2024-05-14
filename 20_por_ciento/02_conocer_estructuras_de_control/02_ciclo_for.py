@@ -140,23 +140,23 @@ for i in range(5,200,5):
 
 print("")
 
-#Ejercicio : En un rango de 0 a 20 imprime todo los numeros que sean pares
+
+#USANDO IF
+
+#Ejercicio 14: Usa la lista paises y recorrela en busca del elemento 'México', si el valor se encuentra en la lista imprime un mensaje descriptivo en consola
+print("")
+for i in paises:
+    if i == 'México':
+        print("Mexico está en la lista")
+
+#Ejercicio 15: En un rango de 0 a 20 imprime todo los numeros que sean pares
 print("*"*20)
-print("EJERCICIO 11: RECORRE LOS NÚMERO PARES DE UN RANGO DE 0 A 20")
+print("EJERCICIO 15: RECORRE LOS NÚMERO PARES DE UN RANGO DE 0 A 20")
 
 for i in range(0,21):
     if i % 2 == 0:
         print(i)
 
-
-
-#USANDO IF
-
-#Ejercicio 03: Usa la lista paises y recorrela en busca del elemento 'México', si el valor se encuentra en la lista imprime un mensaje descriptivo en consola
-print("")
-for i in paises:
-    if i == 'México':
-        print("Mexico está en la lista")
 
 #CICLOS ANIDADOS
 
