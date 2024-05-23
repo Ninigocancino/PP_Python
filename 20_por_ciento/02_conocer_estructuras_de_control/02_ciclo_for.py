@@ -211,6 +211,24 @@ for i in range(1,11):
 
 print("")
 
+#Ejercicio 19: Crea un diccionario con dos elementos de lista e itera sobre ellos
+print("*"*20)
+print("EJERCICIO 19: ITERAR SOBRE LISTAS EN DICICONARIOS")
+print("")
+
+canasta = {
+    "frutas" : ['manzana','uva','pera'],
+    "verduras" : ['zanahorias', 'rabano','calabaza'] 
+}
+
+for e in canasta:
+    print(f"{e.capitalize()}:")
+    for i in canasta[e]:
+        print(f"{i.capitalize()}")
+    print("")
+
+print("")
+
 #USAR CONTINUE Y BREAK
 
 #USANDO MÉTODOS
