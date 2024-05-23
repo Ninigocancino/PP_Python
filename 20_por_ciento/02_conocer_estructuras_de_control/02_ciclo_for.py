@@ -177,8 +177,27 @@ print("")
 print(animales)
 
 print("")
-#CICLOS ANIDADOS
 
+#CICLOS ANIDADOS
+#     Apartir de este punto usaremos elementos iterables propios para cada ejercicio
+#Ejercicio 17: Crea una matriz de elementos numericos desde una lista de lista e imprime cada fila de la matriz
+
+print("*"*20)
+print("EJERCICIO 17: ITERA SOBRE LAS FILAS DE UNA MATRIZ")
+
+matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [10,11,12]
+]
+
+for i in matriz:
+    for e in i:
+        print(e, end=",")
+    print("")
+
+print("")
 #USAR CONTINUE Y BREAK
 
 #USANDO MÉTODOS
