@@ -269,6 +269,18 @@ for i in items:
 
 print(i)
 
+#Ejercicio 23: Deten la iteración de un rango al encontrar un valor
+print("*"*20)
+print("EJERCICIO 23: DETENER LA ITERACIÓN DE UN RANGO")
+print("")
+
+for i in range(0,20):
+    if i == 2*8:
+        break
+    print(i)
+
+print("")
+
 #USANDO MÉTODOS
 
 #Ejercicio 06: Toma la lista ciudades y conbierte cada elemento a mayúsculas
