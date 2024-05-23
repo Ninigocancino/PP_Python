@@ -231,9 +231,9 @@ print("")
 
 #USAR CONTINUE Y BREAK
 
-#Ejercicio 20: 
+#Ejercicio 20: Salta dos valores de una secuencia numerica 
 print("*"*20)
-print("EJERCICIO 20: sSALTAR UN VALOR DE LA SECUENCIA DEL 1 AL 20")
+print("EJERCICIO 20: SALTAR UN VALOR DE LA SECUENCIA DEL 1 AL 20")
 print("")
 
 for i in range(1,21):
@@ -243,10 +243,22 @@ for i in range(1,21):
 
 print("")
 
+#Ejercicio 21: Salta los valores que sean par en una secuencia numerica del 1 al 20
+print("*"*20)
+print("EJERICIO 21: SALTAR LOS NÚMEROS PARES EN UNA SECUENCIA DEL 1 AL 20")
+print("")
+
+for i in range(1,21):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+print("")
+
 #USANDO MÉTODOS
 
 #Ejercicio 06: Toma la lista ciudades y conbierte cada elemento a mayúsculas
-
+print("*"*20)
 print("")
 
 for i in ciudades:
