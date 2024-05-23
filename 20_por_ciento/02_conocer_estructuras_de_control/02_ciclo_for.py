@@ -198,6 +198,19 @@ for i in matriz:
     print("")
 
 print("")
+
+#Ejecicio 18: Usa un rango iterable para crear las tabals de multiplicar del 1 al 10
+print("*"*20)
+print("EJERCICIO 18: CREA LAS TABLSS DE MULTIPLICAR DEL 1 AL 10 USANDO EL CICLO FOR")
+print("")
+
+for i in range(1,11):
+    for m in range(1,11):
+        print(f"{i} x {m} = {i*m}")
+    print("")
+
+print("")
+
 #USAR CONTINUE Y BREAK
 
 #USANDO MÉTODOS
