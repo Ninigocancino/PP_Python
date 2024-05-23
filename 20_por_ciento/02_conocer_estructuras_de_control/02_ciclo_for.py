@@ -231,6 +231,18 @@ print("")
 
 #USAR CONTINUE Y BREAK
 
+#Ejercicio 20: 
+print("*"*20)
+print("EJERCICIO 20: sSALTAR UN VALOR DE LA SECUENCIA DEL 1 AL 20")
+print("")
+
+for i in range(1,21):
+    if i == 10 or i == 15:
+        continue
+    print(i)
+
+print("")
+
 #USANDO MÉTODOS
 
 #Ejercicio 06: Toma la lista ciudades y conbierte cada elemento a mayúsculas
