@@ -255,6 +255,20 @@ for i in range(1,21):
 
 print("")
 
+#Ejercicio 22: Deten la iteración de una lista al encontrar un valor
+print("*"*20)
+print("EJERCICIO 22: DETENER LA ITERACIÓN DE UNA LISTA")
+print("")
+
+items = ['camiseta','sandalias','gorras','alimentos','decoración']
+
+for i in items:
+    if i == 'gorras':
+        break
+    print(i)
+
+print(i)
+
 #USANDO MÉTODOS
 
 #Ejercicio 06: Toma la lista ciudades y conbierte cada elemento a mayúsculas
