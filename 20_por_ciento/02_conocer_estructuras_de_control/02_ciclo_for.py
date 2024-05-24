@@ -283,13 +283,16 @@ print("")
 
 #USANDO MÉTODOS
 
-#Ejercicio 06: Toma la lista ciudades y conbierte cada elemento a mayúsculas
+#Ejercicio 24: Toma la lista ciudades y conbierte cada elemento a mayúsculas
 print("*"*20)
+print("EJERCICIO 24: CONVERTIR LOS VALORES DE LA LISTA CIUDADES A MAYÚSCULAS ")
 print("")
 
 for i in ciudades:
     mayusculas = i.upper()
     print(mayusculas)
+
+print("")
 
 #USANDO FOR ELSE
 
