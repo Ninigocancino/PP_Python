@@ -350,6 +350,25 @@ for i, cuenta in contador.items():
 
 print("")
 
+#Ejercicio 29: Actualizar valores en un itarable usando el método 'items' 
+print("*"*20)
+print("EJERCICIO 29: USA EL MÉTODO ITEM PARA ACTUALIZAR EL VALOR DE LOS PRODUCTOS DE UN DICCIONARIO DE PRODUCTOS PARA QUE TENGAN UN INCREMENTO DE 2 VECES SU VALOR ACTUAL")
+print("")
+
+productos = {
+    'jamón' : 45,
+    'leche' : 30,
+    'zanahoria': 15
+}
+
+for producto,cantidad in productos.items():
+    productos[producto] = cantidad * 2
+
+for n, i in productos.items():
+    print(f"{n},{i}")
+
+print("")
+
 #USANDO FOR ELSE
 
 #USANDO ZIP
