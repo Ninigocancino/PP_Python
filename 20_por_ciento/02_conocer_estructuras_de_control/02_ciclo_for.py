@@ -330,6 +330,26 @@ for c, v in producto.items():
     print(f"{c}:{v}")
 
 print("")
+
+#Ejercicio 28: Contar los elementos que hay en una cadana de caracteres usando el método items
+print("*"*20)
+print("EJERCICIO 28: CUENTAS LAS LETRAS EN LA PALABRA 'ABRACADBRA'")
+print("")
+
+palabra = "abracadabra"
+contador = {}
+
+for i in palabra:
+    if i in contador:
+        contador[i] += 1
+    else:
+        contador[i] = 1
+
+for i, cuenta in contador.items():
+    print(f"{i}: {cuenta}")
+
+print("")
+
 #USANDO FOR ELSE
 
 #USANDO ZIP
