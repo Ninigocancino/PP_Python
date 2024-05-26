@@ -302,7 +302,17 @@ print("")
 for indice, i in enumerate(paises):
     print(indice,i)
 
+print("")
 
+#Ejercicio 26: Usar el metodo 'items' para traer la clave y el valor del dicionario 'lugar'
+print("*"*20)
+print("EJERCICIO 26: TRAER CLAVE Y VALOR DE UN DICCIONARIO")
+print("")
+
+for k,v in lugar.items():
+    print(f"Clave: {k}, Valor: {v}")
+
+print("")
 #USANDO FOR ELSE
 
 #USANDO ZIP
