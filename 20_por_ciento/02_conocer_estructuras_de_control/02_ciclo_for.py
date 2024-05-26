@@ -313,6 +313,23 @@ for k,v in lugar.items():
     print(f"Clave: {k}, Valor: {v}")
 
 print("")
+
+#Ejercicio 27: Utiliza el método item para manejar un diccionario con diferentes tipos de datos
+print("*"*20)
+print("EJERCICIO 27: MANEJAR DIEFERENTES TIPOS DE VALORES CON EL MÉTODO ITEMS")
+print("")
+
+producto = {
+    "Nombre" : "Laptop",
+    "Precio" : "12550",
+    "Disponibilidad" : True,
+    "Caracteristicas" : ["i7", "16GB RAM", "512GB SSD"]
+}
+
+for c, v in producto.items():
+    print(f"{c}:{v}")
+
+print("")
 #USANDO FOR ELSE
 
 #USANDO ZIP
