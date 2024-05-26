@@ -294,6 +294,15 @@ for i in ciudades:
 
 print("")
 
+#Ejercicio 25: Usar el metodo enumerate para conocer el inidice de la lista 'paises'
+print("*"*20)
+print("EJERCICIO 25: ITERAR SOBRE UN ITERABLE E IMPRIMIR CADA ELEMENTO Y SU INDICE")
+print("")
+
+for indice, i in enumerate(paises):
+    print(indice,i)
+
+
 #USANDO FOR ELSE
 
 #USANDO ZIP
