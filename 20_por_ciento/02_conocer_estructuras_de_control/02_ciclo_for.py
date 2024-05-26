@@ -369,6 +369,15 @@ for n, i in productos.items():
 
 print("")
 
+#Ejercicio 30: Iterar sobre las claves
+print("*"*20)
+print("EJERCICIO 30: ITERA SOBRE LAS CLAVES DEL DICICONARIO LUGAR")
+print("")
+
+for i in lugar.keys():
+    print(i)
+
+print("")
 #USANDO FOR ELSE
 
 #USANDO ZIP
