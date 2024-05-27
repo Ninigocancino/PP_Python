@@ -407,6 +407,19 @@ for i in sorted(nombres, reverse=True):
     print(i)
 
 print("")
+
+#Ejercicio 33: Ordenar una lista numérica en modo invertido
+print("*"*20)
+print("EJERCICIO 33: ORDENAR LOS ELEMENTOS DE UNA LISTA PARA MOSTRARLOS DE FORMA INVERTIDA")
+print("")
+
+numerica_2 = [3,5,1,6,8,3,20,12]
+
+for i in reversed(numerica_2):
+    print(i)
+
+print("")
+
 #USANDO FOR ELSE
 
 #USANDO ZIP
