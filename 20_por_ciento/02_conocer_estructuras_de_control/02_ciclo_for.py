@@ -3,7 +3,7 @@
 ciudades = ['Bogota','Cali','México','Paris','Atenas']
 lugar = {'Ciudad':'Ciudad de México', 'País' : 'México'}
 palabra = ['Perro']
-nombres = ['Julio','Marco', 'Sandra', 'Felipe','María']
+nombres = ['Julio','Marco', 'Zacarias','Sandra', 'Felipe','María', 'Anahi']
 paises = ['México','Sudafrica','Canada','Colombia','Cuba']
 animales = ['Zorro','Canguro','León','Caballo']
 
@@ -388,6 +388,25 @@ for i in lugar.values():
     print(i)
 
 print()
+
+#Ejercicio 32: Oredena la lista nombres 
+print("*"*20)
+print("EJERCICIO 32: ORDENAR LOS ELEMENTOS CONTENIDOS EN LA LISTA 'NOMBRE' DE LA 'A' A LA 'Z' Y DESPUÉS DE FORMA INVERTIDA")
+print("")
+
+print("Contenido de la lista:")
+print(nombres)
+print("")
+print("ASCENDENTE POR DEFAULT")
+for i in sorted(nombres):
+    print(i)
+
+print("")
+print("DESCENDENTE")
+for i in sorted(nombres, reverse=True):
+    print(i)
+
+print("")
 #USANDO FOR ELSE
 
 #USANDO ZIP
