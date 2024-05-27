@@ -434,6 +434,20 @@ print("")
 
 #USANDO FOR ELSE
 
+#Ejercicio 35: Usa for else para buscar el numero 12 en una lista e imprimir un mensaje si se encuntra o no
+print("*"*20)
+print("EJERCICIO 35: BUSCAR UN NÚMERO EN UNA LISTA DE NÚMEROS")
+print("")
+
+l_numeros = [20,25,60,15, 10]
+buscar = 12
+
+for i in l_numeros:
+    if i == buscar:
+        print(f"El numero {buscar} se encuentra en la lista")
+        break
+else:
+    print(f"El numero {buscar} no se encuentra en la lista")
 #USANDO ZIP
 
 
