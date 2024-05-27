@@ -378,6 +378,16 @@ for i in lugar.keys():
     print(i)
 
 print("")
+
+#Ejericicio 31: Iterar sobre los valores
+print("*"*20)
+print("EJERCICIO 31: ITERAR SOBRE LOS VALORES DEL DICCIONARIO LUGAR")
+print("")
+
+for i in lugar.values():
+    print(i)
+
+print()
 #USANDO FOR ELSE
 
 #USANDO ZIP
