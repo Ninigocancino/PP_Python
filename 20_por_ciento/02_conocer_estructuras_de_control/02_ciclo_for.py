@@ -420,6 +420,18 @@ for i in reversed(numerica_2):
 
 print("")
 
+#Ejercicio 34: Eliminar elementos duplicados dentro de un iterable
+print("*"*20)
+print("EJERCICIO 34: ELIMINA ELEMENTOS DUPLICADOS ")
+print("")
+
+numeros = [1,2,2,3,4,5,6,7,2,5,5,9,3]
+
+for i in set(numeros):
+    print(i)
+
+print("")
+
 #USANDO FOR ELSE
 
 #USANDO ZIP
