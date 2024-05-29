@@ -462,6 +462,25 @@ for i in nombres:
         break
 else: 
     print(f"{buscar_nombre} no esta en la lista nombres")
+
+print("")
+
+#Ejercicio 37: Usa for else  para pedirle al usuario que ingrese el nombre de un animal y se verifique si este está en la lista
+print("*"*20)
+print("EJERICCIO 37: INGRESAR UN VALOR Y VERIFICAR SI EXISTE EN LA LISTA")
+print("")
+
+valor_ingresado = input("Por favor ingresa el nombre de un animal: ")
+
+for i in animales:
+    if i == valor_ingresado:
+        print(f"{valor_ingresado} esta en nuestra base de datos de animales")
+        break
+else: 
+    print(f"{valor_ingresado} no esta en nuestra base de datos de animales")
+
+print("")
+print(animales)
 #USANDO ZIP
 
 
