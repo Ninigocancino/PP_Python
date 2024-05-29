@@ -481,6 +481,23 @@ else:
 
 print("")
 print(animales)
+
+print("")
+
+#Ejercicio 38: Usa for else para descubrir si una lista numérica está ordenada
+print("*"*20)
+print("EJERCICIO 38: DESCUBRIR SI UNA LISTA ESTA ORDENADA")
+print("")
+
+ln = [1,2,3,4,5]
+
+for i in range(len(ln) -1):
+    if ln[i] > ln[i+1]:
+        print("La lista no está ordenada")
+        break
+else:
+    print("La lista está ordenada")
+
 #USANDO ZIP
 
 
