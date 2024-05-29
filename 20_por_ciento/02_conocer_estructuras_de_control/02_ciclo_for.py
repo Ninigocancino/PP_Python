@@ -434,7 +434,7 @@ print("")
 
 #USANDO FOR ELSE
 
-#Ejercicio 35: Usa for else para buscar el numero 12 en una lista e imprimir un mensaje si se encuntra o no
+#Ejercicio 35: Usa for else para buscar el número 12 en una lista e imprimir un mensaje si se encuentra o no
 print("*"*20)
 print("EJERCICIO 35: BUSCAR UN NÚMERO EN UNA LISTA DE NÚMEROS")
 print("")
@@ -448,6 +448,20 @@ for i in l_numeros:
         break
 else:
     print(f"El numero {buscar} no se encuentra en la lista")
+
+#Ejercicio 36: Usa for else para buscar el elemento 'Saul' en un lista e imprimir un mensaje si se encuentra o no
+print("*"*20)
+print("EJERCICIO 36: BUSCAR UN ELEMENTO ESPECIFICO EN LA LISTA NOMBRES")
+print("")
+
+buscar_nombre = "Saul"
+
+for i in nombres:
+    if i == "Saul":
+        print(f"{buscar_nombre} esta en la lista nombre")
+        break
+else: 
+    print(f"{buscar_nombre} no esta en la lista nombres")
 #USANDO ZIP
 
 
