@@ -514,7 +514,19 @@ edades = [20,35,19]
 for nombre,edad in zip(lista_nombres,edades):
     print(f"{nombre} tiene: {edad}")
 
+print("")
 
+#Ejercicio 40: Crea dos tuplas relacionadas conceptualmente y usa el método ZIP para iterarlas simultaneamente. Las tuplas deben contener el mismo número de elementos
+
+print("*"*20)
+print("EJERCICIO 40: ITERAR SIMULTANEAMENTE TUPLAS PARA UNISRLA")
+print("")
+
+tipos = ("mascota","silvestre","salvaje","ganado")
+animales = ("perro",'conejo','león','vaca')
+
+for animal,tipo in zip(tipos,animales):
+    print(f"{animal}:{tipo}")
 
 
 
