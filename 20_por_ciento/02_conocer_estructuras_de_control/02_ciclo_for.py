@@ -528,6 +528,19 @@ animales = ("perro",'conejo','león','vaca')
 for animal,tipo in zip(tipos,animales):
     print(f"{animal}:{tipo}")
 
+print("")
+
+#Ejercicio 41: Crea dos listas relacionadas conceptualmente, pero con diferente número de elementos y usa el método ZIP para iterarlas simultaneamente y unirlas
+print("*"*20)
+print("EJERCICIO 41: ITERAR SIMULTANEAMENTE LISTAS CON DIFRENTES NÚMEROS DE ELEMENTOS")
+print("")
+
+titulos = ['Originales','Hyperfocus','Esencialismo','Repenzar la pobreza']
+anios = [2014,2017,2019]
+
+for titulo,anio in zip(titulos,anios):
+    print(titulo,anio)
+
 
 
 
