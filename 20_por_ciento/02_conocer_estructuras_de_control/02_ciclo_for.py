@@ -498,8 +498,21 @@ for i in range(len(ln) -1):
 else:
     print("La lista está ordenada")
 
+print("")
+
 #USANDO ZIP
 
+#Ejercicio 39: crea dos listas relacionadas conceptualmente y usa el método ZIP para iterarlas simultaneamente. Las listas deben contener el mismo número de elementos (al menos tres por cada listas)
+
+print("*"*20)
+print("EJERCICIO 39: ITERAR SIMULTANEAMENTE LISTAS PARA UNIRLAS")
+print("")
+
+lista_nombres = ["Laura","Fernanda", "Mara"]
+edades = [20,35,19]
+
+for nombre,edad in zip(lista_nombres,edades):
+    print(f"{nombre} tiene: {edad}")
 
 
 
