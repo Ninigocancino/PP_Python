@@ -17,3 +17,17 @@ while operacion > contador:
 
 print("")
 
+#Ejercicio 02: crea una cuenta regresiva condicional 
+print("*"*20)
+print("EJERCICIO 02: CUENTA REGRESIVA")
+print("")
+
+operacion2 = 0
+
+decrecer = 10
+
+while operacion2 < decrecer:
+    print(decrecer)
+    decrecer  -= 1
+
+print("")
