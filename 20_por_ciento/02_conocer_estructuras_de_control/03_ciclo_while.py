@@ -31,3 +31,20 @@ while operacion2 < decrecer:
     decrecer  -= 1
 
 print("")
+
+#Ejercicio 03: Inicia una secuencia de lanzamiento personalizable
+print("*"*20)
+print("EJERCICIO 03: SECUENCIA DE LANZAMIENTO PERSONALIZADA")
+print()
+
+respuesta = int(input("¿Qué tan larga quieres que sea la cuenta regresiva para el lanzamiento: "))
+
+while respuesta != 0:
+    uno = 1
+    print("")
+    print("El lanzamiento iniciará en: ")
+    while uno <= respuesta:
+        print(respuesta)
+        respuesta -= 1
+    print("Lanzamiento")
+    break
