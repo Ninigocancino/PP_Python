@@ -48,3 +48,20 @@ while respuesta != 0:
         respuesta -= 1
     print("Lanzamiento")
     break
+
+print("")
+
+# USANDO WHILE TRUE
+
+#Ejercicio 04: Crea una salida de un programa 
+print("*"*20)
+print("EJERCICIO 04: INSTRUCCIÓN PARA SALIR DE PROGRAMA")
+print("")
+
+while True:
+    instruccion = input("Ingresa la palabra clave 'exit' para salir del programa: ")
+    if instruccion.lower() == 'exit':
+        break
+    print(f"La instrucción {instruccion} no es valida")
+
+print("La instrucción se ejecuto correctamente: programa cerrado")
