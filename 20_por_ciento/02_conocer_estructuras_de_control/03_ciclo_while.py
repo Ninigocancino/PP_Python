@@ -105,3 +105,20 @@ while True:
 print("Hola Lucas ¿Qué quieres hacer?")
 
 print("")
+
+# CICLO WHILE ANIDADO
+
+#Ejercicio 07: Crea un programa que seejecute mientras la
+
+print("*"*20)
+print("EJERCICIO 07: ")
+print("")
+
+i = 1
+while i <= 3:
+    j = 1
+    while j <= 3:
+        print(f" i = {i}, j = {j}")
+        j +=1
+    
+    i +=1
