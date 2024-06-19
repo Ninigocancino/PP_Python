@@ -65,3 +65,17 @@ while True:
     print(f"La instrucción {instruccion} no es valida")
 
 print("La instrucción se ejecuto correctamente: programa cerrado")
+
+#Ejercicio 05: Crea un programa que pregunte al usuario su edad y se detenga hasta que la edad sea igual a  25
+print("*"*20)
+print("EJERCICIO 05: ADIVINA LA EDAD")
+print("")
+
+while True: 
+    edad_usuario = int(input("¿Cuál es tu edad?: "))
+    edad = 25
+    if edad_usuario == edad:
+        break
+    print("la edad no es correcta")
+
+print("la edad es correcta")
