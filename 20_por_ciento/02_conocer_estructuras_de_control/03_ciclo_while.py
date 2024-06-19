@@ -66,6 +66,8 @@ while True:
 
 print("La instrucción se ejecuto correctamente: programa cerrado")
 
+print("")
+
 #Ejercicio 05: Crea un programa que pregunte al usuario su edad y se detenga hasta que la edad sea igual a  25
 print("*"*20)
 print("EJERCICIO 05: ADIVINA LA EDAD")
@@ -79,3 +81,27 @@ while True:
     print("la edad no es correcta")
 
 print("la edad es correcta")
+
+print("")
+
+#Ejericio 06: Crea un programa que le pregunte al usuario su nombre y edad y valide si son iguales a los datos de comparación asignados
+print("*"*20)
+print("EJERCICIO 06: VALIDA SI LOS DATOS DE REGISTRO DE UNA PERSONA SON EXACTOS")
+print("")
+
+while True:
+    edad_guardada = 45
+    nombre_usuario = "Lucas"
+    altura_usuario = 1.70
+
+    edad_g = int(input("Ingresa tu edad: "))
+    nombre_u = input("Ingresa tu nombre: ")
+    altura_u = float(input("Ingresa tu estatura:"))
+
+    if edad_guardada == edad_g and nombre_usuario == nombre_usuario and altura_usuario == altura_u:
+        break
+    print("No eres Lucas, intenta de nuevo")
+
+print("Hola Lucas ¿Qué quieres hacer?")
+
+print("")
