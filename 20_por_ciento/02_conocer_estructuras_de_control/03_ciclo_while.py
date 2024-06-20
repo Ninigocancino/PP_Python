@@ -108,10 +108,9 @@ print("")
 
 # CICLO WHILE ANIDADO
 
-#Ejercicio 07: Crea un programa que seejecute mientras la
-
+#Ejercicio 07: Crea un programa que realice una cuenta que controle la ejecución de otro conteo mientras la cuenta en ambos conteos sea sea menor de tres e imprima las combinaciones posibles
 print("*"*20)
-print("EJERCICIO 07: ")
+print("EJERCICIO 07: CONTEO CONDICIONAL ")
 print("")
 
 i = 1
@@ -122,3 +121,5 @@ while i <= 3:
         j +=1
     
     i +=1
+
+print("")
