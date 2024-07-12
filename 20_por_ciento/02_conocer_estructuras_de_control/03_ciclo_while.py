@@ -1,3 +1,4 @@
+""""
 # IMPLEMENTACIÓN BÁSICA DEL CICLO WHILE
 
 #Ejercicio 01: Itera una lista numérica  mientras el número sea menor al resultado de una operación dada
@@ -123,3 +124,6 @@ while i <= 3:
     i +=1
 
 print("")
+
+"""
+
