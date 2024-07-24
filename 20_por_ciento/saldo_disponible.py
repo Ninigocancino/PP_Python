@@ -16,5 +16,23 @@ triger = int(input("ingresa (1) para continuar y (2) para salir: "))
 
 if triger == 1:
     print("Ok")
-else:
+
+    saldo_inicial = float(input("¿Cuánto dinero quieres depositar a tu cuenta?: "))
+    tope_gastos = float(input("¿Cuando quieres que te detengamos?: "))
+
+    if tope_gastos < saldo_inicial:
+        print("Ok podemos continuar")
+
+        while saldo_inicial >= tope_gastos:
+            compra = float(input("¿Cuánto gastaste hoy?: "))
+            saldo_inicial = saldo_inicial - compra
+            print(saldo_inicial)
+
+
+
+    else:
+        print("El saldo debe ser mayor al tope")
+
+
+elif triger == 2:
     exit()
