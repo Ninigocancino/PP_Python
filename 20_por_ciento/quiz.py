@@ -13,19 +13,15 @@ q1 = input("Ingresa tu respuesta: ").upper()
 if q1 == respuesta_q1:
     print("Perfecto has acertado")
     print("Haz ganado 5 puntos")
-    pts_q1 = 5
+    pts_q1 = "C"
     record.append(pts_q1)
 elif q1 == "C":
     print("Bierut, no es un país")
-    pts_q1 = 0
-    record.append(pts_q1)
 elif q1 == "A":
     print("Muy cerca, China es grande pero no es el más grande")
-    pts_q1 = 0
-    record.append(pts_q1)
 else:
     print("Elige una opción valida")
-    pts_q1 = 0
-    record.append(pts_q1)
 
-print(f"Tu record es de {record} pts")
+puntos = len(record)
+
+print(f"Tu record es de {puntos} pts")
