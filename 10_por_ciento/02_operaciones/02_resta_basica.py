@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Operación suma básica
+Nombre del ejercicio: Operación resta básica
 
 Instrucciones: Crea dos variables y asignales un valor númerico cualquiera a cada una de ellas, después crea una tercera variable que guarde la resta entre las variables creadas, por último imprime el resultado en consola y ejecuta el código para verificar si el programa funciona
 """
