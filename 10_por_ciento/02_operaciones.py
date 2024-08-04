@@ -1,20 +1,4 @@
 
-#Operación suma:
-a = 2
-b = 3
-
-suma = a + b
-
-print(suma)
-
-#Operación resta:
-
-r_a = 8
-r_b = 10
-
-resta = r_b - r_a
-
-print(resta)
 
 #Operación multiplicación:
 
