@@ -19,11 +19,12 @@ INSTRUCCIONES:
 Crea un programa sencillo que realice las siguientes acciones:
   1.- Calcula el gasto total de cada opción para elegir el más económico
   2.- Muestra el desarrollo del problema al usuario usando print
+  3.- Imprimir un mensaje para el usuario en el que se indique cuál es la opción más económica 
 
 """
 
 
-print("Datos analisis 1: ")
+print("Datos análisis 1: ")
 
 distancia_1 = 130
 c_c_1 = 18
@@ -49,7 +50,7 @@ print(f"Para lo cual debemos simplemente multiplicar el consumo total de combust
 print("")
 gasto_t = consumo_t_1 * precio_gas
 
-print("Datos analisis 2: ")
+print("Datos análisis 2: ")
 
 distancia_2 = 100
 c_c_2 = 10
