@@ -11,3 +11,22 @@ Criterios de calidad:
 4.- Los textos deben mostrarse de forma amigable para facilitar al usuario su lectura 
 """
 
+print("")
+
+print("_"*60)
+
+print("")
+print("*"*20,"QUIZ V_01","*"*20)
+print(" "*16,"Bienvenido, juguemos")
+
+print("")
+
+print("-"*18, "Instrucciones","-"*18)
+print("")
+print(" "*4,"01 Ingresa iniciar")
+print(" "*4,"02 Responde las reguntas para ganar puntos")
+print("")
+
+print("_"*60)
+
+print("")
