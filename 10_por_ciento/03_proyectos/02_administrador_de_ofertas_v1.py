@@ -1,7 +1,7 @@
 """
 DESCRIPCIÓN DEL PROYECTO:
 
-Nombre del Proyecto: Control de ofertas
+Nombre del Proyecto: Descuentapp
 
 Instrucciones:
 Crearemos un programa que permita a una tienda administrar sus ofertas y conocer la información relacionada a cada una de allas y al mismo tiempo sea capaz de mostrar a los clientes el desglose de información referente a su compra.
@@ -24,9 +24,29 @@ Criterios de calidad:
 7.- El programa debe mostrar un mensaje de despedida antes de cerrarse
 """
 
-print("Hoy tenemos 7 por ciento de descuento en toda la tienda")
 
-compra = float(input("Ingrese el monto de la campra: "))
+# Agrega formato a la entrada del programa
+
+print("")
+
+print("_"*60)
+
+print("")
+print("*"*20,"DESCUENTAPP","*"*20)
+print(" "*8,"Bienvenido, conoce tu descuento")
+
+print("")
+
+print("-"*13, "Tenemos ofertas para ti:","-"*13)
+print("")
+print(" "*4,"Oferta:")
+print(" "*4,"Descuento: '7 %'")
+print(" "*4,"Productos: Toda la tienda")
+
+
+# Se realiza la operación 
+
+compra = 300
 
 rebaja = 0.07
 
@@ -34,11 +54,23 @@ descuento = compra * rebaja
 
 total = compra - descuento
 
-print(f"Su compra es de {compra}")
-print(f"Su descuento es {descuento}")
-print(f"Total a pagar: {total}")
+print("")
+print(" "*6,f"Su compra es de {compra}")
+print(" "*6,f"Su descuento es {descuento}")
+print(" "*6,f"Total a pagar: {total}")
+
+
+#Proporciona formato después de la ejecución de la operación
 
 print("")
-print("Gracias por su compra vuelva pronto")
+print(" "*4,"Gracias por su compra vuelva pronto")
+
+
+
+print("")
+
+print("_"*60)
+
+print("")
 
 exit()
