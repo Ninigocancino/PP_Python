@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Lista de nombres
+Nombre del ejercicio: Lista de animales domésticos 
 
 Instrucciones: Crea una lista de 5 elementos con nombres de animales domesticos e imprime el contenido.
 """
