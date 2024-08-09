@@ -1,22 +1,11 @@
 
 #CREACIÓN DE LISTAS
 
-#Ejercicio 01: Crea una lista de 5 elementos con nombres de personas e imprime el contenido.
-print("Lista 1:")
-nombres= ['Juan','Pablo','Lisa','Sebastian','Laura']
-print(nombres)
 
-#Ejercicio 02: Crea una lista con numeros del 0 al 4 e imprime el contenido.
-print("")
-print("Lista 2:")
-numeros= [0,1,2,3,4]
-print(numeros)
 
-#Ejercicio 03: Crea una lista de 5 elementos con nombres de animales domesticos e imprime el contenido.
-print("")
-print("Lista 3:")
-animales= ['Perro','Gato','Hamster','Perico','Caballo']
-print(animales)
+
+
+
 
 #Ejercicio 04: Accede a uno de los elementos de cada lista creada.
 print("")
