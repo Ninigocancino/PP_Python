@@ -7,3 +7,14 @@ Instrucciones:
 3.- De no pertenecer debe imprimir el mensaje 'Lo sentimos su nombre no coincide con el del propietario' 
 
 """
+
+print("EJERCICIO '¿ESTO ES TUYO?' ")
+
+solicitar_nombre = input("Ingresa tu nombre por favor:").upper()
+
+duenio = "PERLA"
+
+if solicitar_nombre == duenio:
+    print("Aquí lo tiene, disculpe el inconveniente")
+else:
+    print("Lo sentimos, no podemos entregar el objeto: \nsu nombre no coincide con el del propietario")
