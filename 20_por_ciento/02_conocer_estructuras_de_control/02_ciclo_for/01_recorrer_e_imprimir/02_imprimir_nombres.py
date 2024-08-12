@@ -7,3 +7,15 @@ Instrucciones:
 3.- Imprime cada uno de los elementos de la lista
 
 """
+
+nombres = ['Julio','Marco', 'Zacarias','Sandra', 'Felipe','María', 'Anahi']
+
+print("*"*20)
+print("EJERCICIO 02: NOMBRES")
+
+for nombre in nombres:
+    print(nombre)
+
+print("")
+
+
