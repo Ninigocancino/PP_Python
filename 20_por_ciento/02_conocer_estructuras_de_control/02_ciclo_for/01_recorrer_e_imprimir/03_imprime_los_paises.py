@@ -11,7 +11,7 @@ Instrucciones:
 paises = ['México','Sudafrica','Canada','Colombia','Cuba']
 
 print("*"*20)
-print("EJERCICIO 03: NOMBRES")
+print("EJERCICIO 03: IMPRIME LOS PAISES")
 
 for i  in paises:
     print(i)
