@@ -7,3 +7,13 @@ Instrucciones:
 3.- Imprime cada uno de los elementos de la lista
 
 """
+
+paises = ['México','Sudafrica','Canada','Colombia','Cuba']
+
+print("*"*20)
+print("EJERCICIO 03: NOMBRES")
+
+for i  in paises:
+    print(i)
+
+print("")
