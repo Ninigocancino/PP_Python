@@ -7,3 +7,8 @@ Instrucciones:
 3.- Imprime el resultado.
 
 """
+
+palabra = "letra"
+
+for i in palabra:
+    print(i)
