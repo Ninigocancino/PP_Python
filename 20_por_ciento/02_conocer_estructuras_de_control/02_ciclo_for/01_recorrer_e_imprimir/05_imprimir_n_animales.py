@@ -7,3 +7,8 @@ Instrucciones:
 3.- Imprime los valores de la lista.
 
 """
+
+animales = ['Zorro','Canguro','León','Caballo']
+
+for animal in animales:
+    print(animal)
