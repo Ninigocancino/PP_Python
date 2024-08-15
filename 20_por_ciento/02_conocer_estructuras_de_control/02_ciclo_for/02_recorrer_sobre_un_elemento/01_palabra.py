@@ -7,3 +7,8 @@ Instrucciones:
 3.- Imprime los valores de la lista.
 
 """
+
+palabra = ["Exadecimal"]
+
+for letra in palabra[0]:
+    print(letra)
