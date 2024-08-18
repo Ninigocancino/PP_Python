@@ -8,3 +8,7 @@ Instrucciones:
 4.- Imprime cada uno de los incrementos
 
 """
+
+for i in range(0,100,5):
+    incremento_cuadrado = i**2
+    print(incremento_cuadrado)
