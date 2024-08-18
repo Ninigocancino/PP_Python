@@ -7,3 +7,5 @@ Instrucciones:
 3.- Imprime cada uno de los elementos de la lista
 
 """
+for i in range(0,5):
+    print(i)
