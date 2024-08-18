@@ -7,3 +7,8 @@ Instrucciones:
 3.- Imprime cada uno de los elementos de la lista
 
 """
+
+ciudades = ['Bogota','Cali','México','Paris','Atenas', "Lisboa", '"Lima', "Tokyo"]
+
+for i in ciudades[5]:
+    print(i)
