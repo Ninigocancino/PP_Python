@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Recorre un el nombre de una ciudad
+Nombre del ejercicio: Recorre el nombre de una ciudad
 
 Instrucciones: 
 1.- Crea una lista con nombres de ciudades
