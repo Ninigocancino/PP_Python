@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Imprimir los números pares enun rango dado
+Nombre del ejercicio: Imprimir los números pares en un rango dado
 
 Instrucciones: 
 1.- Crea un rango del 0 al 20
@@ -7,3 +7,8 @@ Instrucciones:
 3.- Imprime los valores 
 
 """
+
+for i in range(0,20):
+    if i % 2 == 0:
+        print(f"{i} es un número par")
+    
