@@ -6,3 +6,9 @@ Instrucciones:
 2.- Imprime cada una de las tablas
 
 """
+
+for i in range(1,11):
+    for n in range(1,11):
+        multiplicar = n * i
+        print(f"{n} X {i} = {multiplicar}")
+    print("")
