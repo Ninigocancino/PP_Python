@@ -1,9 +1,9 @@
 """
-Nombre del ejercicio: Itera sobre lista de diccionario
+Nombre del ejercicio: Verdura y Frutas
 
 Instrucciones: 
-1.- Crea un diccionario con dos elementos que contienen listas
-2.- Itera sobre cada elemento
+1.- Crea un diccionario con dos listas, una lista de frutas y una lista de verduras
+2.- Itera sobre los elementos para mostrar en pantalla las dos listas que agrupan frutas y verduras
 2.- Imprime el resultado
 
 """
