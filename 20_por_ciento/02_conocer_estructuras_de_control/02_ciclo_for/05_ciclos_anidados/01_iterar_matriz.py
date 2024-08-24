@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Iterar elementos de una matriz
+Nombre del ejercicio: Iterar elementos de una matriz numérica
 
 Instrucciones: 
 1.- Crea una matriz de elementos numericos desde una lista de lista 
