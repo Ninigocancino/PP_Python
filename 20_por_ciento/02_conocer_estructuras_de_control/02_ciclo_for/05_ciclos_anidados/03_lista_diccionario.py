@@ -8,3 +8,13 @@ Instrucciones:
 
 """
 
+canasta = {
+    "frutas" : ['manzana','uva','pera'],
+    "verduras" : ['zanahorias', 'rabano','calabaza'] 
+}
+
+for e in canasta:
+    print(f"{e.capitalize()}:")
+    for i in canasta[e]:
+        print(f"{i.capitalize()}")
+    print("")
