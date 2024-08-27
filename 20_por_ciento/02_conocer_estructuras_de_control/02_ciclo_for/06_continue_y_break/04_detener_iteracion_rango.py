@@ -7,3 +7,9 @@ Instrucciones:
 3.- Imprime los elementos antes del break
 
 """
+
+for i in range(0,20):
+    if i == 2*8:
+        break
+    print(i)
+print(f"El break sucede en {i}")
