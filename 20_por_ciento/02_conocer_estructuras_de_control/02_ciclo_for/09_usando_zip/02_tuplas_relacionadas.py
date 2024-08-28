@@ -7,3 +7,9 @@ Instrucciones:
 3.- Imprime un mensaje que contenga las iteraciones simultaneas
 
 """
+
+tipos = ("mascota","silvestre","salvaje","ganado")
+animales = ("perro",'conejo','león','vaca')
+
+for animal,tipo in zip(tipos,animales):
+    print(f"{animal}:{tipo}")
