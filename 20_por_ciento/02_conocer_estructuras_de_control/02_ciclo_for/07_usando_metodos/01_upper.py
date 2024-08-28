@@ -7,3 +7,9 @@ Instrucciones:
 3.- Imprime los elementos
 
 """
+
+ciudades = ['Montreal', 'Londres','Barcelona','Bogota','Damasco']
+
+for i in ciudades:
+    mayusculas = i.upper()
+    print(mayusculas)
