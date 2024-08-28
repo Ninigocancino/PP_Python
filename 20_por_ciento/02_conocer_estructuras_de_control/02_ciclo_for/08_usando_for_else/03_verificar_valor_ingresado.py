@@ -10,3 +10,14 @@ Instrucciones:
 6.- Si el nombre no esta en la lista imprime 'el nombre no esta en la lista'
 
 """
+
+animales = ["León", "Tigre", "Lobo", "Oso", "Boa"]
+
+valor_ingresado = input("Por favor ingresa el nombre de un animal: ").capitalize()
+
+for i in animales:
+    if i == valor_ingresado:
+        print(f"{valor_ingresado} esta en nuestra base de datos de animales")
+        break
+else: 
+    print(f"{valor_ingresado} no esta en nuestra base de datos de animales")
