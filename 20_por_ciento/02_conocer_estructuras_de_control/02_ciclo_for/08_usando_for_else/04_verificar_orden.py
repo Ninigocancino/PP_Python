@@ -9,3 +9,12 @@ Instrucciones:
 6.- Si los números no están ordenados imprime 'No están ordenados' 
 
 """
+
+ln = [1,2,3,4,5]
+
+for i in range(len(ln) -1):
+    if ln[i] > ln[i+1]:
+        print("La lista no está ordenada")
+        break
+else:
+    print("La lista está ordenada")
