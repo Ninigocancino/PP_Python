@@ -7,3 +7,8 @@ Instrucciones:
 3.- Imprime los elementos y sus indices en la lista
 
 """
+
+paises = ["Canada","México",'Argentina','Rusia','Libia','Japón']
+
+for indice, i in enumerate(paises):
+    print(indice,i)
