@@ -8,3 +8,8 @@ Instrucciones:
 7:- Imprime los elementos números de forma vertical
 
 """
+
+numeros = [3,5,1,6,8,3,20,12]
+
+for i in reversed(numeros):
+    print(i)
