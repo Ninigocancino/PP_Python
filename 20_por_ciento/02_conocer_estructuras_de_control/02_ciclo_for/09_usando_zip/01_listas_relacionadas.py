@@ -7,3 +7,9 @@ Instrucciones:
 3.- Imprime un mensaje que contenga las iteraciones simultaneas
 
 """
+
+lista_nombres = ["Laura","Fernanda", "Mara"]
+edades = [20,35,19]
+
+for nombre,edad in zip(lista_nombres,edades):
+    print(f"{nombre} tiene: {edad}")
