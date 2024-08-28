@@ -8,3 +8,14 @@ Instrucciones:
 3.- Imprime los valores
 
 """
+
+
+vegetacion = {
+    'Bugambilia' : 'Flor',
+    'Pino' : 'Arbol',
+    'Mango' : 'Arbol frutal',
+    'Zanahoria' : 'Verdura'
+}
+
+for i in vegetacion.values():
+    print(i)
