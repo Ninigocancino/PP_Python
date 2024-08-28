@@ -1,10 +1,10 @@
 """
-Nombre del ejercicio: ¿Cuántas letras tiene una palabra?
+Nombre del ejercicio: ¿Cuántas veces se repite una letra en una palabra?
 
 Instrucciones: 
 1.- Crea una variable que guarde una palabra determinada
 2.- Recorre el elemento
-3.- Imprime el elemento y la cuenta de caracteres o letras en el elemento
+3.- Imprime en verticalmente el caracter  y la cuenta de las vaces que aparece en la palabra
 
 """
 
