@@ -8,3 +8,17 @@ Instrucciones:
 3.- Imprime los nombres
 
 """
+
+nombres = ['Zara','Lucas', 'Felipe', 'Armando','Tristan','Leticia','Silas','Mauricio','Juvenal']
+
+print("Contenido de la lista:")
+print(nombres)
+print("")
+print("ASCENDENTE POR DEFAULT")
+for i in sorted(nombres):
+    print(i)
+
+print("")
+print("DESCENDENTE")
+for i in sorted(nombres, reverse=True):
+    print(i)
