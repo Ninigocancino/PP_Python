@@ -7,3 +7,12 @@ Instrucciones:
 3.- Imprime la clave y el valor de cada elemnto
 
 """
+
+lugar = {
+    'Venecia' : 'ciudad',
+    'Saturno' : 'planeta',
+    'Atlnatida' : 'mito'
+}
+
+for k,v in lugar.items():
+    print(f"Clave: {k}, Valor: {v}")
