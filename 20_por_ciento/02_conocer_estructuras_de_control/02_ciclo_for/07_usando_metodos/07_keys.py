@@ -9,3 +9,12 @@ Instrucciones:
 
 """
 
+vegetacion = {
+    'Bugambilia' : 'Flor',
+    'Pino' : 'Arbol',
+    'Mango' : 'Arbol frutal',
+    'Zanahoria' : 'Verdura'
+}
+
+for i in vegetacion.keys():
+    print(i)
