@@ -11,3 +11,13 @@ Instrucciones:
 
 """
 
+nombres = ['Macario', 'Sarahi', 'Adrián', 'Lupe', 'Saul', 'Lucas']
+
+buscar_nombre = "Saul"
+
+for i in nombres:
+    if i == "Saul":
+        print(f"{buscar_nombre} esta en la lista nombre")
+        break
+else: 
+    print(f"{buscar_nombre} no esta en la lista nombres")
