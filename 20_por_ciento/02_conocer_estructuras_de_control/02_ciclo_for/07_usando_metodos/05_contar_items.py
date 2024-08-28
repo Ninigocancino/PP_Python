@@ -8,3 +8,14 @@ Instrucciones:
 
 """
 
+palabra = "abracadabra"
+contador = {}
+
+for i in palabra:
+    if i in contador:
+        contador[i] += 1
+    else:
+        contador[i] = 1
+
+for i, cuenta in contador.items():
+    print(f"{i}: {cuenta}")
