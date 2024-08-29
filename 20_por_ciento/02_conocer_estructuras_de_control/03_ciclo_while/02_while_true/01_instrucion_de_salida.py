@@ -7,3 +7,12 @@ Instrucciones:
 3.- Si la instrucción es correcta imprime el mensaje ' El programa se ejecutó correctamente' 
 
 """
+
+
+while True:
+    instruccion = input("Ingresa la palabra clave 'exit' para salir del programa: ")
+    if instruccion.lower() == 'exit':
+        break
+    print(f"La instrucción {instruccion} no es valida")
+
+print("La instrucción se ejecuto correctamente: programa cerrado")
