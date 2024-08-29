@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Contador
+Nombre del ejercicio: Cuenta regresiva
 
 Instrucciones: 
 1.- Usa el ciclo while para decrecer una cuenta a partir de un número dado y hasta que se cumpla una condición especifica
