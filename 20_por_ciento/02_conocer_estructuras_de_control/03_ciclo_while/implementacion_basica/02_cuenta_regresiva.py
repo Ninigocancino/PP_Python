@@ -6,3 +6,11 @@ Instrucciones:
 2.- Imprime el conteo 
 
 """
+
+limite = 0
+
+decrecer = 10
+
+while limite < decrecer:
+    print(decrecer)
+    decrecer  -= 1
