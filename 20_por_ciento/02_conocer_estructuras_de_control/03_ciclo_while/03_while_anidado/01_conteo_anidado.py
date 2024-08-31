@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Conteo simultaneo
+Nombre del ejercicio: Combinaciones en conteo anidado
 
 Instrucciones: 
 1.- Crea un conteo que controle la ejecución de otro conteo mientras la cuenta en ambos conteos sea menor de tres 
