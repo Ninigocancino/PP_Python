@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Validació de datos de registro
+Nombre del ejercicio: Validación de datos de registro
 
 Instrucciones: 
 1.- Crea datos de control
