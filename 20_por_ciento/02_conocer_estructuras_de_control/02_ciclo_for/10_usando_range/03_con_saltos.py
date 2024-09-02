@@ -7,3 +7,6 @@ Instrucciones:
 2.- Imprime las iteraciones
 
 """
+
+for i in range(9,19,3):
+    print(i)
