@@ -6,3 +6,6 @@ Instrucciones:
 2.- Imprime las iteraciones
 
 """
+
+for i in range(7, 15):
+    print(i)
