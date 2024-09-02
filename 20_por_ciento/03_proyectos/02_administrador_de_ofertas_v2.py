@@ -23,3 +23,53 @@ Además de los requisitos de la versión anterior...
 6.- El programa debe mostrar la información de la transacción de forma desglosada
 7.- El programa debe mostrar un mensaje de despedida antes de cerrarse
 """
+
+# Agrega formato a la entrada del programa
+
+print("")
+
+print("_"*60)
+
+print("")
+print("*"*20,"DESCUENTAPP","*"*20)
+print(" "*8,"Bienvenido, conoce tu descuento")
+
+print("")
+
+print("-"*13, "Tenemos ofertas para ti:","-"*13)
+print("")
+print(" "*4,"Oferta:")
+print(" "*4,"Descuento: '7 %'")
+print(" "*4,"Productos: Toda la tienda")
+
+
+# Se realiza la operación 
+
+compra = 300
+
+rebaja = 0.07
+
+descuento = compra * rebaja
+
+total = compra - descuento
+
+print("")
+print(" "*6,f"Su compra es de {compra}")
+print(" "*6,f"Su descuento es {descuento}")
+print(" "*6,f"Total a pagar: {total}")
+
+
+#Proporciona formato después de la ejecución de la operación
+
+print("")
+print(" "*4,"Gracias por su compra vuelva pronto")
+
+
+
+print("")
+
+print("_"*60)
+
+print("")
+
+exit()
