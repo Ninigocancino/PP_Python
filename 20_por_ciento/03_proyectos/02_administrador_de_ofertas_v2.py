@@ -38,11 +38,50 @@ print("")
 
 print("-"*13, "Tenemos ofertas para ti:","-"*13)
 print("")
+print("Ingresa para descubrir nuestro catálogo de productos")
+print("")
+
+"""
 print(" "*4,"Oferta:")
 print(" "*4,"Descuento: '7 %'")
 print(" "*4,"Productos: Toda la tienda")
+"""
 
+desc_producto = {
+    'Camisa sport' : 0,
+    'Zapatos' : 0,
+    'Gafas' : 7,
+    'Short berm' : 0,
+    'Jeans' : 7
+}
 
+print("¿Deseas continuar al catálogo?")
+entrada = int(input("Ingresar a '1' para continuar y '2' para salir: "))
+
+if entrada == 1:
+    print("¡HOLA!")
+    print("Dale un vistazo a nuestros productos disponibles: ")
+
+    for clave in desc_producto:
+        print(clave)
+
+else:
+    exit()
+
+print("")
+print("¿Deseas consultar descuentos en productos?")
+
+consulta = int(input('ingresa 1 para consultar'))
+
+if consulta == 1:
+    producto = input("¿Qué producto deseas consultar?: ").capitalize()
+
+    for clave, valor in desc_producto.items():
+        if clave == producto:
+            print(clave,valor)
+          
+
+"""
 # Se realiza la operación 
 
 compra = 300
@@ -73,3 +112,5 @@ print("_"*60)
 print("")
 
 exit()
+
+"""
