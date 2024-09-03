@@ -63,7 +63,7 @@ cat_producto = {
     'Jeans' : 650
 }
 
-camisas_count = 0
+camisas_count = []
 zapatos_count = 0
 gafas_count = 0
 shorts_counts = 0
@@ -125,9 +125,30 @@ if entry == 1:
 
     print("")
 
-    #producto_1 = input("Ingresa el árticulo: ")
+    disparador = input("Deseas agregar un producto? Ingresa (si) o (no): ")
 
-    #if producto_1 in cat_producto:
+    while disparador == "si":
+        producto_1 = input("Ingresa el árticulo: ").upper()
+
+        if producto_1 == 'CAMISA SPORT':
+            cantidad = int(input("¿Cuántas camisas deseas agregar?: "))
+            camisas_count.append(cantidad)
+
+        for i in camisas_count:
+            print(f"{i} Camisas agregadas")
+
+        disparador = input("Deseas agregar un producto? Ingresa (si) o (no): ")
+    else:
+        print("Listo")
+
+"""
+     'Camisa sport' : 200,
+    'Zapatos' : 450,
+    'Gafas' : 180,
+    'Short berm' : 340,
+    'Jeans' : 650
+"""
+        
 
 
 """
