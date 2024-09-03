@@ -63,20 +63,26 @@ cat_producto = {
     'Jeans' : 650
 }
 
-total_compra = 0
-
-ahorro = 0
+camisas_count = 0
+zapatos_count = 0
+gafas_count = 0
+shorts_counts = 0
+jeans_counts = 0
 
 compras = []
-
 cantidad = []
+
+total_compra = 0
+ahorro = 0
 
 print("¿Deseas continuar al catálogo?")
 entrada = int(input("Ingresar a '1' para continuar y '2' para salir: "))
+print("")
 
 if entrada == 1:
     print("¡HOLA!")
-    print("Dale un vistazo a nuestros productos disponibles: ")
+    print("PASO 1: ECHALE UN VISTAZO A NUESTRO CATÁLOGO DE PRODUCTOS")
+    print("")
 
     for clave in desc_producto:
         print(clave)
@@ -85,7 +91,9 @@ else:
     exit()
 
 print("")
+print("PASO 2: CONSULTA LOS DESCUENTOS EN NUESTROS PRODUCTOS")
 print("¿Deseas consultar descuentos en productos?")
+print("")
 
 consulta = int(input('ingresa 1 para consultar o cualquier otro número para continuar: '))
 
@@ -94,29 +102,33 @@ if consulta == 1:
 
     for clave, valor in desc_producto.items():
         if clave == producto:
-            print(clave,valor)
+            print(f"{clave} tiene {valor}% de descuento")
 
 else:
     print("")
 
-print("Iniciemos tus compras ")
+print("")
+print("PASO 3: AGREGA PRODUCTOS AL CARRITO DE COMPRA")
 print("Ingresa '1' para agregar a carrito de compra")
 print("Ingresa '2' para salir")
+print("")
 
 entry = int(input("¿Que deseas hacer?: "))
 
 if entry == 1:
 
+    print("")
     print("Catálogo de productos")
 
     for c,v in cat_producto.items():
-        print(c,v)
+        print(f"-{c} ${v}")
 
     print("")
 
-    producto_1 = input("Ingresa el árticulo: ")
+    #producto_1 = input("Ingresa el árticulo: ")
 
-          
+    #if producto_1 in cat_producto:
+
 
 """
 # Se realiza la operación 
