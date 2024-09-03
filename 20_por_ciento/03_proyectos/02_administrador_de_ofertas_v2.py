@@ -64,10 +64,10 @@ cat_producto = {
 }
 
 camisas_count = []
-zapatos_count = 0
-gafas_count = 0
-shorts_counts = 0
-jeans_counts = 0
+zapatos_count = []
+gafas_count = []
+shorts_count = []
+jeans_count = []
 
 compras = []
 cantidad = []
@@ -134,8 +134,37 @@ if entry == 1:
             cantidad = int(input("¿Cuántas camisas deseas agregar?: "))
             camisas_count.append(cantidad)
 
-        for i in camisas_count:
-            print(f"{i} Camisas agregadas")
+            for i in camisas_count:
+                print(f"{i} Camisas agregadas")
+
+        elif producto_1 == 'ZAPATOS':
+            cantidad = int(input("¿Cuántos pares de zapatos deseas agregar?: "))
+            zapatos_count.append(cantidad)
+            
+            for i in zapatos_count:
+                print(f"{i} pares de zapatos agregados")
+
+        
+        elif producto_1 == 'GAFAS':
+            cantidad = int(input("¿Cuántas gafas deseas agregar?: "))
+            gafas_count.append(cantidad)
+            
+            for i in gafas_count:
+                print(f"{i} gafas agregadas")
+
+        elif producto_1 == 'SHORT BERM':
+            cantidad = int(input("¿Cuántos shorts deseas agregar?: "))
+            shorts_count.append(cantidad)
+            
+            for i in shorts_count:
+                print(f"{i} shorts agregados")
+
+        elif producto_1 == 'JEANS':
+            cantidad = int(input("¿Cuántos jeans deseas agregar?: "))
+            jeans_count.append(cantidad)
+            
+            for i in jeans_count:
+                print(f"{i} jeans agregados")
 
         disparador = input("Deseas agregar un producto? Ingresa (si) o (no): ")
     else:
