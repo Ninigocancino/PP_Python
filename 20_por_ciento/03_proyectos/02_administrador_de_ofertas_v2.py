@@ -55,6 +55,22 @@ desc_producto = {
     'Jeans' : 7
 }
 
+cat_producto = {
+    'Camisa sport' : 200,
+    'Zapatos' : 450,
+    'Gafas' : 180,
+    'Short berm' : 340,
+    'Jeans' : 650
+}
+
+total_compra = 0
+
+ahorro = 0
+
+compras = []
+
+cantidad = []
+
 print("¿Deseas continuar al catálogo?")
 entrada = int(input("Ingresar a '1' para continuar y '2' para salir: "))
 
@@ -71,7 +87,7 @@ else:
 print("")
 print("¿Deseas consultar descuentos en productos?")
 
-consulta = int(input('ingresa 1 para consultar'))
+consulta = int(input('ingresa 1 para consultar o cualquier otro número para continuar: '))
 
 if consulta == 1:
     producto = input("¿Qué producto deseas consultar?: ").capitalize()
@@ -79,6 +95,27 @@ if consulta == 1:
     for clave, valor in desc_producto.items():
         if clave == producto:
             print(clave,valor)
+
+else:
+    print("")
+
+print("Iniciemos tus compras ")
+print("Ingresa '1' para agregar a carrito de compra")
+print("Ingresa '2' para salir")
+
+entry = int(input("¿Que deseas hacer?: "))
+
+if entry == 1:
+
+    print("Catálogo de productos")
+
+    for c,v in cat_producto.items():
+        print(c,v)
+
+    print("")
+
+    producto_1 = input("Ingresa el árticulo: ")
+
           
 
 """
