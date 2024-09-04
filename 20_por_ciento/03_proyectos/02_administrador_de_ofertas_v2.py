@@ -77,7 +77,7 @@ gafas_count = []
 shorts_count = []
 jeans_count = []
 
-subtotal_camias = []
+subtotal_camisa = []
 
 compras = []
 cantidad = []
@@ -157,7 +157,10 @@ if entry == 1:
                 print(f"El precio por pieza es: ${precio}")
 
                 subtotal = precio * multiplicador
-                print(subtotal)
+
+                subtotal_camisa.append(subtotal)
+
+                
 
 
         elif producto_1 == 'ZAPATOS':
@@ -194,10 +197,13 @@ if entry == 1:
         print("")
 
     reg_compra = camisas_count + zapatos_count + gafas_count + shorts_count + jeans_count
-    #reg_compra = dict(zip(productos,reg_compra))
+    #dict_reg_compra = dict(zip(productos,reg_compra))
+
+  
     print("Tus compras fuerón: ")
-    for c,v in zip(productos,reg_compra):
-        print(f"{c}.....{v}")
+    for c,v,d in zip(productos,reg_compra,subtotal_camisa):
+        print(f"{c}.....{v}, {d}")
+
 
 
 
