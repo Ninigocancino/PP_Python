@@ -64,7 +64,7 @@ desc_producto = {
 }
 
 cat_producto = {
-    'Camisa sport' : 200,
+    'CAMISA SPORT' : 200,
     'Zapatos' : 450,
     'Gafas' : 180,
     'Short berm' : 340,
@@ -76,6 +76,8 @@ zapatos_count = []
 gafas_count = []
 shorts_count = []
 jeans_count = []
+
+subtotal_camias = []
 
 compras = []
 cantidad = []
@@ -144,6 +146,19 @@ if entry == 1:
 
             for i in camisas_count:
                 print(f"{i} Camisas agregadas")
+
+            if producto_1 in cat_producto:
+                for c,v in cat_producto.items():
+                    precio = v
+
+                for i in camisas_count:
+                    multiplicador = i
+
+                print(f"El precio por pieza es: ${precio}")
+
+                subtotal = precio * multiplicador
+                print(subtotal)
+
 
         elif producto_1 == 'ZAPATOS':
             cantidad = int(input("¿Cuántos pares de zapatos deseas agregar?: "))
