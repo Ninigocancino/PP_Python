@@ -47,6 +47,14 @@ print(" "*4,"Descuento: '7 %'")
 print(" "*4,"Productos: Toda la tienda")
 """
 
+productos = [
+    "Camisa sport",
+    "Zapatos",
+    "Gafas",
+    "Short berm",
+    "Jeans"
+]
+
 desc_producto = {
     'Camisa sport' : 0,
     'Zapatos' : 0,
@@ -168,7 +176,15 @@ if entry == 1:
 
         disparador = input("Deseas agregar un producto? Ingresa (si) o (no): ")
     else:
-        print("Listo")
+        print("")
+
+    reg_compra = camisas_count + zapatos_count + gafas_count + shorts_count + jeans_count
+    #reg_compra = dict(zip(productos,reg_compra))
+    print("Tus compras fuerón: ")
+    for c,v in zip(productos,reg_compra):
+        print(f"{c}.....{v}")
+
+
 
 """
      'Camisa sport' : 200,
