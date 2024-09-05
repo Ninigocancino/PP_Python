@@ -205,10 +205,6 @@ if entry == 1:
                         for clave,valor in desc_producto.items():
                             if clave == producto_1 and valor < 0:
                                 descuento = subtotal * valor / 100
-                                #print(c)
-                                #print(v)
-                                #print(descuento)
-
 
                                 sub_total_desc_camisas.append(descuento)
                                 print(f"precio con descuento: {descuento}")
@@ -217,7 +213,7 @@ if entry == 1:
                                 break
                     else:
                         print("Precio no disponible")
-                        
+
             if producto_1 not in producto_agregado: 
                 producto_agregado.append(producto_1)
                 print(producto_agregado)
@@ -236,20 +232,27 @@ if entry == 1:
 
                     #multiplicador = sum(gafas_count)
 
-                    print(f"El precio por pieza es: ${precio}")
-                    subtotal = precio * i
-                    sub_totales.append(subtotal)
+                    if precio > 0:
+                        
+                        print(f"El precio por pieza es: ${precio}")
+                        subtotal = precio * i
+                        sub_totales.append(subtotal)
 
-                    for c,v in desc_producto.items():
-                        if c == producto_1:
-                            descuento = subtotal * v / 100
-                            print(c)
-                            print(v)
-                            print(descuento)
+                        for clave,valor in desc_producto.items():
+                            if clave == producto_1 and valor < 0:
+                                descuento = subtotal * valor / 100
+                                
+                                sub_total_desc_camisas.append(descuento)
+                                print(f"precio con descuento: {descuento}")
+                            else:
+                                print(f"No hay descuento el precio es {subtotal}")
+                                break
+                    else:
+                        print("Precio no disponible")
 
-
-                            sub_total_desc_gafas.append(descuento)
-                            print(f"precio con descuento: {descuento}")
+            if producto_1 not in producto_agregado: 
+                producto_agregado.append(producto_1)
+                print(producto_agregado)
 
 
         elif producto_1 == 'SHORT BERM':
@@ -265,20 +268,27 @@ if entry == 1:
 
                     #multiplicador = sum(shorts_count)
 
-                    print(f"El precio por pieza es: ${precio}")
-                    subtotal = precio * i
-                    sub_totales.append(subtotal)
+                    if precio > 0:
+                        
+                        print(f"El precio por pieza es: ${precio}")
+                        subtotal = precio * i
+                        sub_totales.append(subtotal)
 
-                    for c,v in desc_producto.items():
-                        if c == producto_1:
-                            descuento = subtotal * v / 100
-                            print(c)
-                            print(v)
-                            print(descuento)
+                        for clave,valor in desc_producto.items():
+                            if clave == producto_1 and valor < 0:
+                                descuento = subtotal * valor / 100
+                                
+                                sub_total_desc_camisas.append(descuento)
+                                print(f"precio con descuento: {descuento}")
+                            else:
+                                print(f"No hay descuento el precio es {subtotal}")
+                                break
+                    else:
+                        print("Precio no disponible")
 
-
-                            sub_total_desc_shorts.append(descuento)
-                            print(f"precio con descuento: {descuento}")
+            if producto_1 not in producto_agregado: 
+                producto_agregado.append(producto_1)
+                print(producto_agregado)
 
 
         elif producto_1 == 'JEANS':
@@ -294,20 +304,27 @@ if entry == 1:
 
                     #multiplicador = sum(jeans_count)
 
-                    print(f"El precio por pieza es: ${precio}")
-                    subtotal = precio * i
-                    sub_totales.append(subtotal)
+                    if precio > 0:
+                        
+                        print(f"El precio por pieza es: ${precio}")
+                        subtotal = precio * i
+                        sub_totales.append(subtotal)
 
-                    for c,v in desc_producto.items():
-                        if c == producto_1:
-                            descuento = subtotal * v / 100
-                            print(c)
-                            print(v)
-                            print(descuento)
+                        for clave,valor in desc_producto.items():
+                            if clave == producto_1 and valor < 0:
+                                descuento = subtotal * valor / 100
+                                
+                                sub_total_desc_camisas.append(descuento)
+                                print(f"precio con descuento: {descuento}")
+                            else:
+                                print(f"No hay descuento el precio es {subtotal}")
+                                break
+                    else:
+                        print("Precio no disponible")
 
-
-                            sub_total_desc_jeans.append(descuento)
-                            print(f"precio con descuento: {descuento}")
+            if producto_1 not in producto_agregado: 
+                producto_agregado.append(producto_1)
+                print(producto_agregado)
 
         disparador = input("Deseas agregar un producto? Ingresa (si) o (no): ")
 
