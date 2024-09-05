@@ -79,6 +79,11 @@ jeans_count = []
 
 sub_totales = []
 sub_total_desc_camisas = []
+sub_total_desc_zapatos = []
+sub_total_desc_gafas = []
+sub_total_desc_shorts = []
+sub_total_desc_jeans =[]
+
 
 compras = []
 cantidad = []
@@ -151,25 +156,28 @@ if entry == 1:
                 if c == producto_1:
                     precio = v
 
-                    for i in camisas_count:
-                        multiplicador = i
-
+                    #multiplicador = sum(camisas_count)
+                    if precio > 0:
+                        
                         print(f"El precio por pieza es: ${precio}")
-                        subtotal = precio * multiplicador
-
-                        print(f"No hay descuento el precio es {subtotal}")
+                        subtotal = precio * i
                         sub_totales.append(subtotal)
 
-                        for c,v in desc_producto.items():
-                            if c == producto_1:
-                                descuento = subtotal * v / 100
-                                print(c)
-                                print(v)
-                                print(descuento)
+                        for clave,valor in desc_producto.items():
+                            if clave == producto_1 and valor < 0:
+                                descuento = subtotal * valor / 100
+                                #print(c)
+                                #print(v)
+                                #print(descuento)
 
 
                                 sub_total_desc_camisas.append(descuento)
                                 print(f"precio con descuento: {descuento}")
+                            else:
+                                print(f"No hay descuento el precio es {subtotal}")
+                                break
+                    else:
+                        print("Precio no disponible")
 
         elif producto_1 == 'ZAPATOS':
             cantidad = int(input("¿Cuántos pares de zapatos deseas agregar?: "))
@@ -182,23 +190,22 @@ if entry == 1:
                 if c == producto_1:
                     precio = v
 
-                    for i in zapatos_count:
-                        multiplicador = i
+                    #multiplicador = sum(zapatos_count)
 
-                        print(f"El precio por pieza es: ${precio}")
-                        subtotal = precio * multiplicador
-                        sub_totales.append(subtotal)
+                    print(f"El precio por pieza es: ${precio}")
+                    subtotal = precio * i
+                    sub_totales.append(subtotal)
 
-                        for c,v in desc_producto.items():
-                            if c == producto_1:
-                                descuento = subtotal * v / 100
-                                print(c)
-                                print(v)
-                                print(descuento)
+                    for c,v in desc_producto.items():
+                        if c == producto_1:
+                            descuento = subtotal * v / 100
+                            print(c)
+                            print(v)
+                            print(descuento)
 
 
-                                sub_total_desc_camisas.append(descuento)
-                                print(f"precio con descuento: {descuento}")
+                            sub_total_desc_zapatos.append(descuento)
+                            print(f"precio con descuento: {descuento}")
 
         
         elif producto_1 == 'GAFAS':
@@ -212,23 +219,22 @@ if entry == 1:
                 if c == producto_1:
                     precio = v
 
-                    for i in gafas_count:
-                        multiplicador = i
+                    #multiplicador = sum(gafas_count)
 
-                        print(f"El precio por pieza es: ${precio}")
-                        subtotal = precio * multiplicador
-                        sub_totales.append(subtotal)
+                    print(f"El precio por pieza es: ${precio}")
+                    subtotal = precio * i
+                    sub_totales.append(subtotal)
 
-                        for c,v in desc_producto.items():
-                            if c == producto_1:
-                                descuento = subtotal * v / 100
-                                print(c)
-                                print(v)
-                                print(descuento)
+                    for c,v in desc_producto.items():
+                        if c == producto_1:
+                            descuento = subtotal * v / 100
+                            print(c)
+                            print(v)
+                            print(descuento)
 
 
-                                sub_total_desc_camisas.append(descuento)
-                                print(f"precio con descuento: {descuento}")
+                            sub_total_desc_gafas.append(descuento)
+                            print(f"precio con descuento: {descuento}")
 
 
         elif producto_1 == 'SHORT BERM':
@@ -242,23 +248,22 @@ if entry == 1:
                 if c == producto_1:
                     precio = v
 
-                    for i in shorts_count:
-                        multiplicador = i
+                    #multiplicador = sum(shorts_count)
 
-                        print(f"El precio por pieza es: ${precio}")
-                        subtotal = precio * multiplicador
-                        sub_totales.append(subtotal)
+                    print(f"El precio por pieza es: ${precio}")
+                    subtotal = precio * i
+                    sub_totales.append(subtotal)
 
-                        for c,v in desc_producto.items():
-                            if c == producto_1:
-                                descuento = subtotal * v / 100
-                                print(c)
-                                print(v)
-                                print(descuento)
+                    for c,v in desc_producto.items():
+                        if c == producto_1:
+                            descuento = subtotal * v / 100
+                            print(c)
+                            print(v)
+                            print(descuento)
 
 
-                                sub_total_desc_camisas.append(descuento)
-                                print(f"precio con descuento: {descuento}")
+                            sub_total_desc_shorts.append(descuento)
+                            print(f"precio con descuento: {descuento}")
 
 
         elif producto_1 == 'JEANS':
@@ -272,36 +277,58 @@ if entry == 1:
                 if c == producto_1:
                     precio = v
 
-                    for i in jeans_count:
-                        multiplicador = i
+                    #multiplicador = sum(jeans_count)
 
-                        print(f"El precio por pieza es: ${precio}")
-                        subtotal = precio * multiplicador
-                        sub_totales.append(subtotal)
+                    print(f"El precio por pieza es: ${precio}")
+                    subtotal = precio * i
+                    sub_totales.append(subtotal)
 
-                        for c,v in desc_producto.items():
-                            if c == producto_1:
-                                descuento = subtotal * v / 100
-                                print(c)
-                                print(v)
-                                print(descuento)
+                    for c,v in desc_producto.items():
+                        if c == producto_1:
+                            descuento = subtotal * v / 100
+                            print(c)
+                            print(v)
+                            print(descuento)
 
 
-                                sub_total_desc_camisas.append(descuento)
-                                print(f"precio con descuento: {descuento}")
+                            sub_total_desc_jeans.append(descuento)
+                            print(f"precio con descuento: {descuento}")
 
 
         disparador = input("Deseas agregar un producto? Ingresa (si) o (no): ")
     else:
         print("")
 
-    reg_compra = camisas_count + zapatos_count + gafas_count + shorts_count + jeans_count
+    n_camisas_count = []
+    camisas_count = sum(camisas_count)
+    n_camisas_count.append(camisas_count)
+
+    n_zapatos_count = []
+    zapatos_count = sum(zapatos_count)
+    n_zapatos_count.append(zapatos_count)
+
+    n_gafas_count = [] 
+    gafas_count = sum(gafas_count)
+    n_gafas_count.append(gafas_count)
+
+    n_shorts_count = []
+    shorts_count = sum(shorts_count)
+    n_shorts_count.append(shorts_count)
+
+    n_jeans_count = []
+    jeans_count = sum(jeans_count)
+    n_jeans_count.append(jeans_count)
+
+    reg_compra = n_camisas_count + n_zapatos_count + n_gafas_count + n_shorts_count + n_jeans_count
     #dict_reg_compra = dict(zip(productos,reg_compra))
 
   
     print("Tus compras fuerón: ")
     for c,v,d in zip(productos,reg_compra,sub_totales):
         print(f"{c}.....{v}, el subtotal = {d}")
+
+
+
     
 
 print("")    
