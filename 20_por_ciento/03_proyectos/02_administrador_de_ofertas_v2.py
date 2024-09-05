@@ -84,6 +84,7 @@ sub_total_desc_gafas = []
 sub_total_desc_shorts = []
 sub_total_desc_jeans =[]
 
+producto_agregado = []
 
 compras = []
 cantidad = []
@@ -178,6 +179,10 @@ if entry == 1:
                                 break
                     else:
                         print("Precio no disponible")
+            if producto_1 not in producto_agregado: 
+                producto_agregado.append(producto_1)
+                print(producto_agregado)
+            #break
 
         elif producto_1 == 'ZAPATOS':
             cantidad = int(input("¿Cuántos pares de zapatos deseas agregar?: "))
@@ -191,22 +196,32 @@ if entry == 1:
                     precio = v
 
                     #multiplicador = sum(zapatos_count)
+                    if precio > 0:
+                        
+                        print(f"El precio por pieza es: ${precio}")
+                        subtotal = precio * i
+                        sub_totales.append(subtotal)
 
-                    print(f"El precio por pieza es: ${precio}")
-                    subtotal = precio * i
-                    sub_totales.append(subtotal)
-
-                    for c,v in desc_producto.items():
-                        if c == producto_1:
-                            descuento = subtotal * v / 100
-                            print(c)
-                            print(v)
-                            print(descuento)
+                        for clave,valor in desc_producto.items():
+                            if clave == producto_1 and valor < 0:
+                                descuento = subtotal * valor / 100
+                                #print(c)
+                                #print(v)
+                                #print(descuento)
 
 
-                            sub_total_desc_zapatos.append(descuento)
-                            print(f"precio con descuento: {descuento}")
-
+                                sub_total_desc_camisas.append(descuento)
+                                print(f"precio con descuento: {descuento}")
+                            else:
+                                print(f"No hay descuento el precio es {subtotal}")
+                                break
+                    else:
+                        print("Precio no disponible")
+                        
+            if producto_1 not in producto_agregado: 
+                producto_agregado.append(producto_1)
+                print(producto_agregado)
+            #break
         
         elif producto_1 == 'GAFAS':
             cantidad = int(input("¿Cuántas gafas deseas agregar?: "))
@@ -294,40 +309,37 @@ if entry == 1:
                             sub_total_desc_jeans.append(descuento)
                             print(f"precio con descuento: {descuento}")
 
-
         disparador = input("Deseas agregar un producto? Ingresa (si) o (no): ")
-    else:
-        print("")
-
-    n_camisas_count = []
-    camisas_count = sum(camisas_count)
-    n_camisas_count.append(camisas_count)
-
-    n_zapatos_count = []
-    zapatos_count = sum(zapatos_count)
-    n_zapatos_count.append(zapatos_count)
-
-    n_gafas_count = [] 
-    gafas_count = sum(gafas_count)
-    n_gafas_count.append(gafas_count)
-
-    n_shorts_count = []
-    shorts_count = sum(shorts_count)
-    n_shorts_count.append(shorts_count)
-
-    n_jeans_count = []
-    jeans_count = sum(jeans_count)
-    n_jeans_count.append(jeans_count)
-
-    reg_compra = n_camisas_count + n_zapatos_count + n_gafas_count + n_shorts_count + n_jeans_count
-    #dict_reg_compra = dict(zip(productos,reg_compra))
-
-  
-    print("Tus compras fuerón: ")
-    for c,v,d in zip(productos,reg_compra,sub_totales):
-        print(f"{c}.....{v}, el subtotal = {d}")
 
 
+n_camisas_count = []
+camisas_count = sum(camisas_count)
+n_camisas_count.append(camisas_count)
+
+n_zapatos_count = []
+zapatos_count = sum(zapatos_count)
+n_zapatos_count.append(zapatos_count)
+
+n_gafas_count = [] 
+gafas_count = sum(gafas_count)
+n_gafas_count.append(gafas_count)
+
+n_shorts_count = []
+shorts_count = sum(shorts_count)
+n_shorts_count.append(shorts_count)
+
+n_jeans_count = []
+jeans_count = sum(jeans_count)
+n_jeans_count.append(jeans_count)
+
+reg_compra = n_camisas_count + n_zapatos_count + n_gafas_count + n_shorts_count + n_jeans_count
+#dict_reg_compra = dict(zip(productos,reg_compra))
+
+print("")
+print(producto_agregado)
+print("Tus compras fuerón: ")
+for c,v in zip(producto_agregado,reg_compra):
+    print(f"{c}.....{v}, el subtotal = ")
 
     
 
