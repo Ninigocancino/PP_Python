@@ -1,5 +1,5 @@
 """
-Nombre del ejercicio: Función que saluda
+Nombre del ejercicio: Me presento
 
 Instrucciones: 
 1.- Crea una función que imprima un mensaje de presentación personal
