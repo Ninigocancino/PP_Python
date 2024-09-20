@@ -24,7 +24,7 @@ Además de los requisitos de la versión anterior...
 7.- El programa debe mostrar un mensaje de despedida antes de cerrarse
 """
 
-# Agrega formato a la entrada del programa
+#Bloque 1: Instrucción principal y bienvenida
 
 print("")
 
@@ -46,6 +46,8 @@ print(" "*4,"Oferta:")
 print(" "*4,"Descuento: '7 %'")
 print(" "*4,"Productos: Toda la tienda")
 """
+
+#Bloque 2: Definición de variables globales
 
 productos = [
     "Camisa sport",
@@ -78,22 +80,18 @@ shorts_count = []
 jeans_count = []
 
 sub_totales = []
-sub_total_desc_camisas = []
-sub_total_desc_zapatos = []
-sub_total_desc_gafas = []
-sub_total_desc_shorts = []
-sub_total_desc_jeans =[]
+sub_total_desc = []
 
 producto_agregado = []
 
-compras = []
-cantidad = []
 
-ahorro = 0
+#Bloque 3: 
 
 print("¿Deseas continuar al catálogo?")
 entrada = int(input("Ingresar a '1' para continuar y '2' para salir: "))
 print("")
+
+"""
 
 if entrada == 1:
     print("¡HOLA!")
@@ -165,7 +163,7 @@ if entry == 1:
                         sub_totales.append(subtotal)
 
                         for clave,valor in desc_producto.items():
-                            if clave == producto_1 and valor < 0:
+                            if clave == producto_1 and valor > 0:
                                 descuento = subtotal * valor / 100
                                 #print(c)
                                 #print(v)
@@ -203,7 +201,7 @@ if entry == 1:
                         sub_totales.append(subtotal)
 
                         for clave,valor in desc_producto.items():
-                            if clave == producto_1 and valor < 0:
+                            if clave == producto_1 and valor > 0:
                                 descuento = subtotal * valor / 100
 
                                 sub_total_desc_camisas.append(descuento)
@@ -239,7 +237,7 @@ if entry == 1:
                         sub_totales.append(subtotal)
 
                         for clave,valor in desc_producto.items():
-                            if clave == producto_1 and valor < 0:
+                            if clave == producto_1 and valor > 0:
                                 descuento = subtotal * valor / 100
                                 
                                 sub_total_desc_camisas.append(descuento)
@@ -275,7 +273,7 @@ if entry == 1:
                         sub_totales.append(subtotal)
 
                         for clave,valor in desc_producto.items():
-                            if clave == producto_1 and valor < 0:
+                            if clave == producto_1 and valor > 0:
                                 descuento = subtotal * valor / 100
                                 
                                 sub_total_desc_camisas.append(descuento)
@@ -311,7 +309,7 @@ if entry == 1:
                         sub_totales.append(subtotal)
 
                         for clave,valor in desc_producto.items():
-                            if clave == producto_1 and valor < 0:
+                            if clave == producto_1 and valor > 0:
                                 descuento = subtotal * valor / 100
                                 
                                 sub_total_desc_camisas.append(descuento)
@@ -368,7 +366,7 @@ print(f"Total compra : ${total_compra}")
 print(f"Tu ahorro fue: ${compra_con_descuento}")
 print(f"Tu compra con descuento fue : ${tc}")
 
-
+"""
 
 """
      'Camisa sport' : 200,
