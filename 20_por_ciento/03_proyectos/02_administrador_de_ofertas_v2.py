@@ -85,13 +85,12 @@ sub_total_desc = []
 producto_agregado = []
 
 
-#Bloque 3: 
+#Bloque 3: Interacción inicial con el usuario
 
 print("¿Deseas continuar al catálogo?")
 entrada = int(input("Ingresar a '1' para continuar y '2' para salir: "))
 print("")
 
-"""
 
 if entrada == 1:
     print("¡HOLA!")
@@ -103,6 +102,8 @@ if entrada == 1:
 
 else:
     exit()
+
+"""
 
 print("")
 print("PASO 2: CONSULTA LOS DESCUENTOS EN NUESTROS PRODUCTOS")
