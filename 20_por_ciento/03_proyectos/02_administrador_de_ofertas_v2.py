@@ -116,8 +116,9 @@ consulta = int(input('ingresa 1 para consultar o cualquier otro número para con
 if consulta == 1:
     producto = input("¿Qué producto deseas consultar?: ").capitalize()
 
-    if producto in desc_producto.items():
-        print(f"{producto} tiene {desc_producto[producto]}% de descuento")
+    for clave, valor in desc_producto.items():
+        if clave == producto:
+            print(f"{clave} tiene {valor}% de descuento")
 
 else:
     print("")
