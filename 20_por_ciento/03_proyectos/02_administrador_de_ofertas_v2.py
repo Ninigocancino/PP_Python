@@ -103,7 +103,8 @@ if entrada == 1:
 else:
     exit()
 
-"""
+
+#Bloque 4: Consultar descuento
 
 print("")
 print("PASO 2: CONSULTA LOS DESCUENTOS EN NUESTROS PRODUCTOS")
@@ -115,12 +116,13 @@ consulta = int(input('ingresa 1 para consultar o cualquier otro número para con
 if consulta == 1:
     producto = input("¿Qué producto deseas consultar?: ").capitalize()
 
-    for clave, valor in desc_producto.items():
-        if clave == producto:
-            print(f"{clave} tiene {valor}% de descuento")
+    if producto in desc_producto.items():
+        print(f"{producto} tiene {desc_producto[producto]}% de descuento")
 
 else:
     print("")
+
+"""
 
 print("")
 print("PASO 3: AGREGA PRODUCTOS AL CARRITO DE COMPRA")
