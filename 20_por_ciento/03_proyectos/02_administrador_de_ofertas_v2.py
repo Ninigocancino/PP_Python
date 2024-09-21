@@ -197,6 +197,23 @@ if entry == 1:
             print(f"El producto {producto_1} no está en el catálogo.")
 
 
+#Bloque 6:
+
+print("") 
+print(producto_agregado) 
+print("Tus compras fueron: ") 
+for c, v in zip(producto_agregado, sub_totales): 
+    print(f"{c}: Subtotal = ${v}")
+    
+total_compra = sum(sub_totales)  # Suma de todos los subtotales
+compra_con_descuento = sum(sub_total_desc)  # Suma de todos los descuentos
+tc = total_compra - compra_con_descuento  # Total con descuento aplicado
+
+# Muestra los totales al usuario
+print(f"\nTotal de la compra: ${total_compra}") 
+print(f"Tu ahorro fue: ${compra_con_descuento}") 
+print(f"Total con descuento aplicado: ${tc}")
+
 
 
 """
