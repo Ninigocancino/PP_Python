@@ -109,10 +109,13 @@ else:
 print("")
 print("PASO 2: CONSULTA LOS DESCUENTOS EN NUESTROS PRODUCTOS")
 print("¿Deseas consultar descuentos en productos?")
-print("")
+print("") 
 
 consulta = int(input('ingresa 1 para consultar o cualquier otro número para continuar: '))
 
+#opción 1:
+
+"""
 if consulta == 1:
     producto = input("¿Qué producto deseas consultar?: ").capitalize()
 
@@ -122,6 +125,19 @@ if consulta == 1:
 
 else:
     print("")
+
+"""
+#opción 2: 
+
+if consulta == 1:
+    producto = input("¿Qué producto deseas consultar?: ").capitalize()
+
+    if producto in desc_producto:
+        print(f"{producto} tiene {desc_producto[producto]}% de descuento")
+
+    else:
+        print("")
+
 
 """
 
