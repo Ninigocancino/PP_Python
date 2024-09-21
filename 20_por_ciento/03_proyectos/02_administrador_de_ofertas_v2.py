@@ -138,8 +138,7 @@ if consulta == 1:
     else:
         print("")
 
-
-"""
+#Bloque 5:
 
 print("")
 print("PASO 3: AGREGA PRODUCTOS AL CARRITO DE COMPRA")
@@ -149,6 +148,58 @@ print("")
 
 entry = int(input("¿Que deseas hacer?: "))
 
+if entry == 1:
+
+    print("")
+    print("Catálogo de productos")
+    
+    for c, v in cat_producto.items():
+        print(f"- {c} ${v}")
+
+    print("")
+
+    disparador = input("¿Deseas agregar un producto? Ingresa (si) o (no): ") 
+
+    while disparador == "si":
+
+        producto_1 = input("Ingresa el árticulo: ").upper()
+
+        if producto in cat_producto:
+
+            cantidad = int(input(f"¿Cuántas unidades de {producto} deseas agregar?: "))
+
+            if producto_1 == "CAMISA SPORT":
+                camisas_count.append(cantidad)
+            elif producto_1 == 'ZAPATOS': 
+                zapatos_count.append(cantidad) 
+            elif producto_1 == 'GAFAS': 
+                gafas_count.append(cantidad) 
+            elif producto_1 == 'SHORT BERM': 
+                shorts_count.append(cantidad) 
+            elif producto_1 == 'JEANS': 
+                jeans_count.append(cantidad)
+
+            precio = cat_producto[producto_1] 
+            subtotal = precio * cantidad 
+            sub_totales.append(subtotal)
+
+            descuento = (subtotal * desc_producto[producto_1.capitalize()]) / 100
+            sub_total_desc.append(descuento)
+
+            print(f"Has agregado {cantidad} unidades de {producto_1}. Subtotal: ${subtotal}. Descuento: ${descuento}")
+
+            if producto_1 not in producto_agregado: 
+                producto_agregado.append(producto_1)
+
+            disparador = input("¿Deseas agregar otro producto? Ingresa (si) o (no): ")
+
+        else:
+            print(f"El producto {producto_1} no está en el catálogo.")
+
+
+
+
+"""
 if entry == 1:
 
     print("")
