@@ -15,3 +15,28 @@ Instrucciones:
 9.- Llama la función 2
 10.- Imprime un mensaje que incluya el valor de la variable después de la ejecución de la función 2
 """
+
+x = 50  # Variable global
+
+print("")
+print(f"Valor de X antes de ejecutar las funciones es {x}")
+print("")
+
+def funcion1():
+    x = 20  # Variable local
+    print(f"Valor de 'x' dentro de funcion1: {x}")
+
+def funcion2():
+    global x
+    x = 100  # Modifica la variable global
+    print(f"Valor de 'x' dentro de funcion2: {x}")
+
+print("")
+
+funcion1()
+print(f"Valor de 'x' después de llamar a funcion1: {x}")
+
+funcion2()
+print(f"Valor de 'x' después de llamar a funcion2: {x}")
+
+print("")
