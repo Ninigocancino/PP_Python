@@ -14,3 +14,16 @@ Instrucciones:
 8.- Dentro de la función principal imprime un mensaje que incluya el valor de la variable creada en la función principal
 9.- Fuera de la función principal llama a la función función principal
 """
+
+def funcion_externa():
+    x = 5  # Variable local de 'funcion_externa'
+
+    def funcion_interna():
+        nonlocal x  # Usamos la variable de la función externa
+        x = 10
+        print(f"Valor de 'x' dentro de funcion_interna: {x}")
+
+    funcion_interna()
+    print(f"Valor de 'x' después de llamar a funcion_interna: {x}")
+
+funcion_externa()
