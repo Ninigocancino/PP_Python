@@ -16,14 +16,14 @@ Instrucciones:
 """
 
 def funcion_externa():
-    x = 5  # Variable local de 'funcion_externa'
+    y = 5  # Variable local de 'funcion_externa'
 
     def funcion_interna():
-        nonlocal x  # Usamos la variable de la función externa
-        x = 10
-        print(f"Valor de 'x' dentro de funcion_interna: {x}")
+        nonlocal y  # Usamos la variable de la función externa
+        y = 10
+        print(f"Valor de 'x' dentro de funcion_interna: {y}")
 
     funcion_interna()
-    print(f"Valor de 'x' después de llamar a funcion_interna: {x}")
+    print(f"Valor de 'x' después de llamar a funcion_interna: {y}")
 
 funcion_externa()
