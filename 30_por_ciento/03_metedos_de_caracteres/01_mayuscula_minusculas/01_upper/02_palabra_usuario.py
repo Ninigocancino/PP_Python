@@ -7,3 +7,7 @@ Instrucciones:
 3.- Imprime el resultado
 
 """
+
+palabra_clave = input("Ingresa una palabra clave: ").upper()
+
+print(palabra_clave)
