@@ -7,3 +7,7 @@ Instrucciones:
 3.- Imprime el resultado
 
 """
+
+palabra = "HEY"
+
+print(palabra.lower())
