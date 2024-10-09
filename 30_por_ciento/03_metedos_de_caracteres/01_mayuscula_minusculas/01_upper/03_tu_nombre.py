@@ -7,3 +7,6 @@ Instrucciones:
 3.- Imprime el resultado
 
 """
+nombre_usuario = input("Ingresa tu nombre: ")
+
+print(nombre_usuario.upper())
