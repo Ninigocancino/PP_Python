@@ -27,3 +27,25 @@ Crear un programa sencillo que realice las siguientes acciones:
 6.- El programa debe mostrar la explicación de la operación
 7.- El programa debe mostrar un mensaje de despedida antes de cerrarse
 """
+
+print("")
+print("Bienvenido a Laika")
+print("Calcula el peso que un objeto de la tierra tendría en la luna")
+print("")
+
+print("Instrucciones:")
+print("01) Ingresa una cifra que represente peso en kg")
+print("02) Da enter para realizar el calculo")
+
+peso_tierra = float(input("Ingresa un peso que represente kg: "))
+
+# formula: peso en la tierra * gravedad en la luna / gravedad en la 
+
+g_luna = 0.34
+g_tierra = 1
+
+resultado = peso_tierra * g_luna / g_tierra
+
+print("")
+print(f"El objeto pesa: {peso_tierra}, el objeto en la luna pesa: {resultado}")
+print("")
