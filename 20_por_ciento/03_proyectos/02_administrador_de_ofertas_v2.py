@@ -52,6 +52,51 @@ print("")
 for indice, producto in enumerate(productos):
     print(f"{indice + 1}.{producto} - ${precios[indice]}")
 
+#Elementos para acumular valores relacionados con las compras y productos
 
+productos_comprados = []
+total = 0.0
+ahorro_total = 0.0
 
-#Bloque 2: Definición de variables globales
+while True: 
+    seleccion = input("Ingresa el número del producto que deseas comprar (o escribe 'salir' para terminar)")
+
+    #Condición para finalizar la compra
+    if seleccion.lower() == "salir":
+        break
+
+    #Convertir selección a un indice de la lista
+    try:
+        indice = int(seleccion) -1
+        if 0 <= indice < len(productos):
+            #Agregar el producto seleccionado a la lista de productos comprados
+            productos_comprados.append(productos[indice])
+
+            #Calcular el precio con descuento si aplica
+            precio = precios[indice]
+            descuento = descuentos[indice]
+            if descuento > 0:
+                ahorro = precio * descuento
+                precio_final = precio - ahorro
+                print(f"{productos[indice]} tiene un descuento del 7%. Precio final: ${precio_final:.2f}")
+            else:
+                ahorro = 0
+                precio_final = precio
+                print(f"{productos[indice]} no tiene descuento. Precio: ${precio_final:.2f}")
+
+            #Actualizar total de compra y ahorro acumulado
+            total += precio_final
+            ahorro_total += ahorro
+
+        else:
+            print("Por favor, selecciona un número válido.")
+    except ValueError:
+        print("Entrada no valida. Por favor ingresa un número o 'salir'. ")
+
+print("/nResumen de tu compra: ")
+print("Productos comprados: ", ", ".join(productos_comprados))
+print(f"Total comprado: ${total:.2f}")
+print(f"Total ahorrado: ${ahorro_total:.2f}")
+
+#Mensaje de despedida
+print("Gracias por usar Descuentapp. ¡Hasta pronto!")
