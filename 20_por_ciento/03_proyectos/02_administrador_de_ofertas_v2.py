@@ -25,6 +25,11 @@ Además de los requisitos de la versión anterior...
 7.- El programa debe mostrar un mensaje de despedida antes de cerrarse
 """
 
+
+productos = ["Jabón", "Shampoo", "Pasta dental", "Crema corporal", "Desodorantes"]
+precios = [20.0,50.0,25.0,40.0,30.0]
+descuentos = [0.07,0.07,0.0,0.0,0.07]
+
 #Bloque 1: Instrucción principal y bienvenida
 
 print("")
@@ -39,13 +44,14 @@ print("")
 
 print("-"*13, "Tenemos ofertas para ti:","-"*13)
 print("")
-print("Ingresa para descubrir nuestro catálogo de productos")
+print("Nuestro inentario incluye los siguientes productos:")
 print("")
 
-"""
-print(" "*4,"Oferta:")
-print(" "*4,"Descuento: '7 %'")
-print(" "*4,"Productos: Toda la tienda")
-"""
+#Mostrar inventario
+
+for indice, producto in enumerate(productos):
+    print(f"{indice + 1}.{producto} - ${precios[indice]}")
+
+
 
 #Bloque 2: Definición de variables globales
