@@ -59,7 +59,7 @@ total = 0.0
 ahorro_total = 0.0
 
 while True: 
-    seleccion = input("Ingresa el número del producto que deseas comprar (o escribe 'salir' para terminar)")
+    seleccion = input("Ingresa el número del producto que deseas comprar (o escribe 'salir' para terminar): ")
 
     #Condición para finalizar la compra
     if seleccion.lower() == "salir":
