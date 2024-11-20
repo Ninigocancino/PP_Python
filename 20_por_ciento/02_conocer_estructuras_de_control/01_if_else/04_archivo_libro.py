@@ -8,4 +8,6 @@ busqueda = input("¿Qué libro estás buscando?: ")
 if busqueda in archivo:
     print(f"{busqueda} esta en la colección")
 else:
-    print("Lo sentimos {busqueda} no se encuentra en el archivo")
+    print(f"Lo sentimos {busqueda} no se encuentra en el archivo")
+
+    
