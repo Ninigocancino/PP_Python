@@ -6,5 +6,5 @@ conteo = len(tendencias_tec)
 
 print(conteo)
 
-tic = tendencias_tec[0:2]
-print(tic)
+posicion = tendencias_tec[2]
+print(posicion)
