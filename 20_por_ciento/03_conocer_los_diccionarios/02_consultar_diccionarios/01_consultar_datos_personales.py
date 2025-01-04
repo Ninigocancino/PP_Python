@@ -6,3 +6,6 @@ dato_personal = {
     "ciudad_residencia": "Venecia"}
 
 print(dato_personal)
+print("")
+print("Extraer valor 'apellido': ")
+print(dato_personal["apellido"])
