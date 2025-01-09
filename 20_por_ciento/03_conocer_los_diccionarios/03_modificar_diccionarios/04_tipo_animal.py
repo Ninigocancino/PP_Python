@@ -18,6 +18,9 @@ print(tipo_animal)
 print("")
 print("Modificar el valor de la clave 'Delfin' ")
 tipo_animal['Delfin']= 'Acuatico-marino'
+tipo_animal['Terodactilo'] = 'Volador-dinosaurio'
 print(tipo_animal)
 
+
 print("")
+print()
