@@ -27,3 +27,9 @@ print("Eliminar el par clave-valor 'Atmosfera' usando 'del' ")
 del planeta['Atmosfera']
 print(planeta)
 print("")
+
+print("")
+print("Eliminar el par clave-valor 'Nucleo' usando el metódo 'pop' ")
+nucleo = planeta.pop('Nucleo')
+print(planeta)
+print()
