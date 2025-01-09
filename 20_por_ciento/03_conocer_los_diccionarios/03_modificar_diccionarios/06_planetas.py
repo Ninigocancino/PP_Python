@@ -7,5 +7,14 @@ planeta = {
     'Tipo orbita': 'Elipsoide'
 }
 
-
+print("")
+print("Diccionario original")
 print(planeta)
+
+print("")
+print("Agregar un nuevo par clave-valor")
+planeta['Nucleo']= 'Caliente'
+print(planeta)
+
+print("")
+
