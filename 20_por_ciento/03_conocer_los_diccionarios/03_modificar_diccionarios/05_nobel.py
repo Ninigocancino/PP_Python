@@ -15,7 +15,12 @@ print("")
 
 print("")
 print("Agregar un nuevo par clave-valor")
-ganadores_2024['Matematicas']="Esta no es una categoría de Nobel"
+ganadores_2024['Matematicas']="Desconocido"
+print(ganadores_2024)
+
+print("")
+print("Cambiar el valor de la clave 'Matematicas' ")
+ganadores_2024['Matematicas']="No se entregan premios Nobel en Matématicas"
 print(ganadores_2024)
 
 print("")
