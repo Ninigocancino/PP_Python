@@ -18,4 +18,8 @@ planeta['Atmosfera'] = True
 print(planeta)
 
 print("")
+print("Cambiar el valor de la clave 'Atmosfera' ")
+planeta['Atmosfera']=False
+print(planeta)
 
+print("")
