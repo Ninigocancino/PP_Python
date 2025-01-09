@@ -23,4 +23,7 @@ print(tipo_animal)
 
 
 print("")
-print()
+print("Eliminar el par clave-valor 'Delfin' usando del")
+del tipo_animal['Delfin']
+print(tipo_animal)
+
