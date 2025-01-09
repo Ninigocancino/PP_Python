@@ -30,3 +30,11 @@ print("Eliminar un par clave-valor usando del")
 del ganadores_2024['Matematicas']
 print(ganadores_2024)
 
+print("")
+print("Eliminar un par clave-valor usando el método pop")
+pintura = ganadores_2024.pop('Pintura')
+print(ganadores_2024)
+
+print()
+
+
