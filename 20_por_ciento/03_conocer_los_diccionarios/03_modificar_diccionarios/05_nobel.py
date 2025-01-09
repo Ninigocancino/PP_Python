@@ -23,4 +23,10 @@ print("Cambiar el valor de la clave 'Matematicas' ")
 ganadores_2024['Matematicas']="No se entregan premios Nobel en Matématicas"
 print(ganadores_2024)
 
+ganadores_2024['Pintura']="No se entregan premios Nobel en Pintura"
+
 print("")
+print("Eliminar un par clave-valor usando del")
+del ganadores_2024['Matematicas']
+print(ganadores_2024)
+
