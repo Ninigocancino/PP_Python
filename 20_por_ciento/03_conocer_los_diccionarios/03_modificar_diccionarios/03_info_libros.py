@@ -35,3 +35,9 @@ print("")
 print("Eliminando un par clave valor usando  el metodo del")
 del libros_info['Tipo_pasta']
 print(libros_info)
+
+print("")
+print("Eliminando un par clave valor usando el metodo pop ")
+calificacion = libros_info.pop('Calificacion')
+presentacion = libros_info.pop('Presentación')
+print(libros_info)
