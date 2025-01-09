@@ -27,3 +27,8 @@ print("Eliminar el par clave-valor 'Delfin' usando del")
 del tipo_animal['Delfin']
 print(tipo_animal)
 
+print("")
+print("Eliminar el par clave-valor 'Terodactilo' usando pop")
+terodactilo = tipo_animal.pop('Terodactilo')
+print(tipo_animal)
+print("")
