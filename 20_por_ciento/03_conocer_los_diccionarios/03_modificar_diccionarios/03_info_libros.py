@@ -18,3 +18,8 @@ print("")
 print("Modificar el valor de la clave 'N_paginas' ")
 libros_info['N_paginas'] = 600
 print(libros_info)
+
+print("")
+print("Agregar un nuevo par clave valor al diccionario")
+libros_info['Calificacion'] = '5/5'
+print(libros_info)
