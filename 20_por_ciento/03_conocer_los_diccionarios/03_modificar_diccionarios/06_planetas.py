@@ -23,3 +23,7 @@ planeta['Atmosfera']=False
 print(planeta)
 
 print("")
+print("Eliminar el par clave-valor 'Atmosfera' usando 'del' ")
+del planeta['Atmosfera']
+print(planeta)
+print("")
