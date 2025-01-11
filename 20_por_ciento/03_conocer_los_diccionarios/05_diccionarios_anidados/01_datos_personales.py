@@ -11,7 +11,7 @@ print(datos)
 
 print("")
 
-maria = datos['María']
+maria = datos['María']['Edad']
 
 print(maria)
 
