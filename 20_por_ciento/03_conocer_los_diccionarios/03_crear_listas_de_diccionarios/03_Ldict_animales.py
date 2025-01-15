@@ -6,4 +6,13 @@ animales = {
 }
 
 print("")
+print("Diccionario animales")
 print(animales)
+print("")
+
+print("Acceder a los valores de las claves")
+print(animales['Reptiles'])
+mamiferos = animales['Mamiferos']
+print(mamiferos)
+print(animales['Anfibios'])
+print("")
