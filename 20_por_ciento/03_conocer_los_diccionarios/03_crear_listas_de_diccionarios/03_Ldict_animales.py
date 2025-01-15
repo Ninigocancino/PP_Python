@@ -16,3 +16,10 @@ mamiferos = animales['Mamiferos']
 print(mamiferos)
 print(animales['Anfibios'])
 print("")
+
+print("Acceder a los valores especificos del diccionario 'animales' ")
+print(animales['Reptiles'][3])
+print(animales['Mamiferos'][0])
+anfibios = animales['Anfibios'][0]
+print(anfibios)
+print("")
