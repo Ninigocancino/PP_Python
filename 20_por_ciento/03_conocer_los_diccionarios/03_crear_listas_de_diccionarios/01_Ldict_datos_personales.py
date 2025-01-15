@@ -16,3 +16,10 @@ print(datos['edad'])
 ciudad = datos['ciudad']
 print(ciudad)
 print("")
+
+print("Acceder a valores correspondientes a Ana en el diciconario")
+print(datos['nombres'][1])
+edad_ana = datos['edad'][1]
+print(edad_ana)
+print(datos['ciudad'][1])
+print("")
