@@ -1,5 +1,5 @@
 
-
+#Manejar el diccionario números usando listas como valores de las claves
 
 numeros = {
     'pares' : [2,4,6,8,10,12],
