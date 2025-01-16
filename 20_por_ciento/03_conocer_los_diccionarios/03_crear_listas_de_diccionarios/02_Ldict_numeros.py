@@ -12,3 +12,11 @@ print("")
 print("Diccionario números manejando listas como valres de las claves")
 print(numeros)
 print()
+
+print("Acceder a los valores de las claves del diccionario")
+pares = numeros['pares']
+print(pares)
+print(numeros['primos'])
+impares = numeros['impares']
+print(impares)
+print(numeros['romanos_pares'])
