@@ -8,3 +8,9 @@ print()
 print("Diciconario: libros")
 print(libros)
 print()
+
+print("Acceder a los valores de las claves")
+titulos = libros['titulos']
+print(titulos)
+print(libros['autores'])
+print("")
