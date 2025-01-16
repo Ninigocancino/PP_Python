@@ -1,4 +1,6 @@
 
+#Manejar el diciconario Libros usando listas como valores de las claves
+
 libros = {
     'titulos' : ['Sapiens','Hyperfocus','Así se domina el mundo'],
     'autores' : ['Yuval Noha Harari','Chris Bailey', 'Pedro Baños']
