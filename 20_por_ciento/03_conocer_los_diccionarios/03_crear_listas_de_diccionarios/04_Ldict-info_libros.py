@@ -3,7 +3,8 @@
 
 libros = {
     'titulos' : ['Sapiens','Hyperfocus','Así se domina el mundo'],
-    'autores' : ['Yuval Noha Harari','Chris Bailey', 'Pedro Baños']
+    'autores' : ['Yuval Noha Harari','Chris Bailey', 'Pedro Baños'],
+    'tema': ['Filosfía','Productividad','Geopolitica']
 }
 
 print()
@@ -16,3 +17,10 @@ titulos = libros['titulos']
 print(titulos)
 print(libros['autores'])
 print("")
+
+print("Acceder a los valores asociados al titulo 'Hyperfocus' ")
+print(libros['titulos'][1])
+autores = libros['autores'][1]
+print(autores)
+print(libros['tema'][1])
+print()
