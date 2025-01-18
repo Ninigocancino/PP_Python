@@ -9,3 +9,10 @@ planetas = {
 print("")
 print("Diciconario Planetas con listas como valores: ")
 print(planetas)
+
+print("")
+print("Acceder a los valores de las claves")
+nombre = planetas['nombre']
+print(planetas['tamaño'])
+print(planetas['p_elemento'])
+print()
