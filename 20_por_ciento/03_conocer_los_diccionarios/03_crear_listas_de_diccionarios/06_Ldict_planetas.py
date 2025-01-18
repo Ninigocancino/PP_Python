@@ -16,3 +16,11 @@ nombre = planetas['nombre']
 print(planetas['tamaño'])
 print(planetas['p_elemento'])
 print()
+
+print("Acceder a los valores especificos que forme el item 'Saturno'")
+saturno = planetas['nombre'][1]
+print(saturno)
+print(planetas['tamaño'][1])
+elemento = planetas['p_elemento'][1]
+print(elemento)
+print()
