@@ -20,3 +20,10 @@ print(numeros['primos'])
 impares = numeros['impares']
 print(impares)
 print(numeros['romanos_pares'])
+print("")
+
+print("Acceder a valores especificos en el diccionario 'numeros' ")
+primos = numeros['primos'][4]
+print(primos)
+print(numeros['romanos_pares'][3])
+print("")
