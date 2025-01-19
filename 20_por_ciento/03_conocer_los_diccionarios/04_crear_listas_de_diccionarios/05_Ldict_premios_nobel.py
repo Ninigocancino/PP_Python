@@ -16,3 +16,11 @@ categoria = premios_nobel['categoria']
 print(categoria)
 print(premios_nobel['anio'])
 print("")
+
+print("")
+print("Acceder a los valores que conforman el item 'Albert Einstein' ")
+print(premios_nobel['nombre'][2])
+print(premios_nobel['categoria'][2])
+anio = premios_nobel['anio'][2]
+print(anio)
+print("")
