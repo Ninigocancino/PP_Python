@@ -5,3 +5,7 @@ premios_nobel = {
     'categoria' : ['Fisica','Quimica','Fisica','Paz','Medicina'],
     'anio' : [1903,1911,1921,1993,2015]
 }
+
+print("")
+print("Diccionario 'Premios Nobel' con listas como valores")
+print(premios_nobel)
