@@ -9,3 +9,10 @@ premios_nobel = {
 print("")
 print("Diccionario 'Premios Nobel' con listas como valores")
 print(premios_nobel)
+
+print("")
+print("Acceder a los valores de las claves 'categoria' y 'anio' ")
+categoria = premios_nobel['categoria']
+print(categoria)
+print(premios_nobel['anio'])
+print("")
