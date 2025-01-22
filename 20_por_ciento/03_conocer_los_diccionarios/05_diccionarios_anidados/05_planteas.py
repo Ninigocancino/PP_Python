@@ -38,3 +38,8 @@ print("Acceder al segundo nivel de la clave 'gaseoso' ")
 gaseoso = planetas['gaseosos']['pg01']
 print(gaseoso)
 print()
+
+print("Acceder al tercer nivel de la clave 'rocosos' ")
+nombre_r = planetas['rocosos']['pr01']['nombre']
+print(nombre_r)
+print()
