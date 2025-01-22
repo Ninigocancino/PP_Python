@@ -32,3 +32,9 @@ print()
 print("Primer nivel de la clave Rocosos")
 rocosos = planetas['rocosos']
 print(rocosos)
+print("")
+
+print("Acceder al segundo nivel de la clave 'gaseoso' ")
+gaseoso = planetas['gaseosos']['pg01']
+print(gaseoso)
+print()
