@@ -28,3 +28,7 @@ print()
 print("Diccionario anidado con información de planetas")
 print(planetas)
 print()
+
+print("Primer nivel de la clave Rocosos")
+rocosos = planetas['rocosos']
+print(rocosos)
