@@ -16,3 +16,8 @@ print("")
 print("Acceder a un dicionario de la lista")
 print(animales[2])
 print("")
+
+
+print("Acceder a un valor especifico de la lista de diccionario")
+print(animales[2]['nombre'])
+print("")
