@@ -9,6 +9,10 @@ animales = [
 ]
 
 print()
-print("Crear el diccioario datos personales como una lista de diccionarios")
+print("Crear el diccionario animales como una lista de diccionarios")
 print(animales)
+print("")
+
+print("Acceder a un dicionario de la lista")
+print(animales[2])
 print("")
