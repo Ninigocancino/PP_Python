@@ -11,3 +11,8 @@ print("")
 print("Crear el diccionario 'datos personales' como una lista de diccionarios")
 print(datos_personales)
 print("")
+
+print("Acceder a los diciconarios 1 y 3 de la lista de diccionarios")
+print(datos_personales[1])
+print(datos_personales[3])
+print()
