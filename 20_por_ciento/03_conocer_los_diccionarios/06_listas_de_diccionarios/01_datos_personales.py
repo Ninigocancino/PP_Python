@@ -16,3 +16,7 @@ print("Acceder a los diciconarios 1 y 3 de la lista de diccionarios")
 print(datos_personales[1])
 print(datos_personales[3])
 print()
+
+print("Acceder a un valor especifico en la lista de diciconarios")
+print(datos_personales[2]['ciudad'])
+print()
