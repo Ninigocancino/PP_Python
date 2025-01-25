@@ -11,3 +11,7 @@ print()
 print("Crear el diccionario libros como lista de diccionarios")
 print(libros)
 print()
+
+print("Acceder a un dicionario de la lista")
+print(libros[0])
+print("")
