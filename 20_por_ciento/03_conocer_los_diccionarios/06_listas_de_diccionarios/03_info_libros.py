@@ -15,3 +15,7 @@ print()
 print("Acceder a un dicionario de la lista")
 print(libros[0])
 print("")
+
+print("Accerder a un elemento en particular de uno de los diccionarios")
+print(libros[1]['titulo'])
+print("")
