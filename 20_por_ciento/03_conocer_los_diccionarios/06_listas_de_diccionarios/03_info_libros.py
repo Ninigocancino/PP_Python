@@ -1,2 +1,13 @@
 
 #Trabajar con el diccionario libros como una lista de diccionarios
+
+libros = [
+    {'titulo': 'Hyperfocus', 'tema': 'productividad', 'autor': 'Chris Bailey'},
+    {'titulo': 'Originals', 'tema': 'innovación','autor': 'Adam Grant'},
+    {'titulo': 'El cisne negro', 'tema': 'Filosofía', 'autor': 'Nassim Nicholas Taleb'}
+]
+
+print()
+print("Crear el diccionario libros como lista de diccionarios")
+print(libros)
+print()
