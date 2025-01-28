@@ -12,3 +12,7 @@ print("")
 print("Lista de dicionarios:")
 print(ganadores_nobel)
 print()
+
+print("Acceder al dicionario numero 4 de la lista")
+print(ganadores_nobel[3])
+print()
