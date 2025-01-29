@@ -4,7 +4,7 @@
 planeta = [
     {'nombre': 'Tierra', 'posición': '3'},
     {'nombre': 'Mercurio', 'posición': '1'},
-    {'nombre': 'Urano', 'posición': '7'}
+    {'nombre': 'Urano', 'posición': '6'}
 ]
 
 print("")
@@ -25,3 +25,11 @@ planeta[0]['tipo'] = 'Rocoso'
 print(planeta[0])
 print("")
 print(planeta)
+print()
+
+print(planeta)
+print()
+print("Modifica el valor de la clave 'posición' en el diccionario 3 de la lista")
+planeta[2]['posición'] = '7'
+print(planeta)
+print()
