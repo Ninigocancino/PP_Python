@@ -19,3 +19,9 @@ print("")
 print("Acceder al valor de la clave nombre en el tercer diciconario de la lista")
 print(planeta[2]['nombre'])
 print("")
+
+print("Agregar una nueva clave al diciconario 2 de la lista")
+planeta[0]['tipo'] = 'Rocoso'
+print(planeta[0])
+print("")
+print(planeta)
