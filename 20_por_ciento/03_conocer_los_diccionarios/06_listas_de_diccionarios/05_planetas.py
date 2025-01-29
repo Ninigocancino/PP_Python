@@ -11,3 +11,7 @@ print("")
 print("Lista de diciconarios 'Planeta': ")
 print(planeta)
 print("")
+
+print("Acceder al primer diccionario de la lista")
+print(planeta[0])
+print("")
