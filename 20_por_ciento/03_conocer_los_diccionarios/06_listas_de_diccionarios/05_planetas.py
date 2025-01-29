@@ -15,3 +15,7 @@ print("")
 print("Acceder al primer diccionario de la lista")
 print(planeta[0])
 print("")
+
+print("Acceder al valor de la clave nombre en el tercer diciconario de la lista")
+print(planeta[2]['nombre'])
+print("")
