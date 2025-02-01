@@ -1,6 +1,6 @@
 
 """
-Nombre del ejercicio: Parrafo loco
+Nombre del ejercicio: Frase loca
 
 Instrucciones: Crea un parrafo con un mensaje donde el sujeto, la acción y el tiempo varien.
 """
