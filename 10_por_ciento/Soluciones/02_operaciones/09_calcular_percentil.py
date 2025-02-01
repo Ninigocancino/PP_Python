@@ -1,13 +1,16 @@
 """
 Nombre del ejercicio: Calcular el porcentaje de una cifra
 
-Instrucciones: Crea un programa que calcule un porcentaje determinado, almacenado en una variable, de una cantidad total almacenado en otra variable, luego imprime el resultado con un ensaje descriptivo
+Instrucciones: Crea un programa que calcule el porcentaje de una cantidad dada cuando esta cantidad representa el 100%
 """
 
-cantidad = 50
+# Ejemplo: el 50% de 50 es ....
 
-porcentaje = 5
+cantidad = 100 #representa el 100% 
 
-r = porcentaje / cantidad *100
+porcentaje = 50 #indica el porcentaje que se quiere calcular de la conocidad
+
+r =  (cantidad /100) * porcentaje
+#r = r * porcentaje
 
 print(f"el {porcentaje}% de {cantidad} es {r}")
