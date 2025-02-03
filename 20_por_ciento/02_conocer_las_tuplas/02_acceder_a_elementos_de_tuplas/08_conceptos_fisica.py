@@ -4,7 +4,7 @@ conceptos_fisica = ('Fuerza','Energía','Materia','Movimiento','Tiempo', 'Masa',
 print("Tupla original: ")
 print(conceptos_fisica)
 
-conceptos_fisica = conceptos_fisica[1:5]
+conceptos_fisica = conceptos_fisica[5]
 
 print("Acceder a valores de tuplas: ")
 print(conceptos_fisica)
