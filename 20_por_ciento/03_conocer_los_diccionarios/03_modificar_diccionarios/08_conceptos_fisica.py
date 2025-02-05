@@ -7,5 +7,11 @@ conceptos_fisica = {
 }
 
 print("Agregar un nuevo par clave-valor")
-conceptos_fisica['Masa']= "La masa es una medida de la cantidad de materia que contiene un objeto. Es una propiedad intrínseca de la materia y se relaciona con la inercia, es decir, la resistencia de un objeto a cambiar su estado de movimiento."
+conceptos_fisica['Masa']= " "
 print(conceptos_fisica)
+
+print("")
+print("Modificar el valor de la clave 'Masa' ")
+conceptos_fisica['Masa'] = 'La masa es una medida de la cantidad de materia que contiene un objeto. Es una propiedad intrínseca de la materia y se relaciona con la inercia, es decir, la resistencia de un objeto a cambiar su estado de movimiento.'
+print(conceptos_fisica)
+print()
