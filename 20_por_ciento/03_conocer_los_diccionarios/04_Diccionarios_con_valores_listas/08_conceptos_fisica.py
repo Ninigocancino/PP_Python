@@ -13,3 +13,10 @@ print("Acceder a los valores de las claves")
 print(conceptos_fisica['concepto'])
 print(conceptos_fisica['definicion'])
 print()
+
+print("Acceder a valores especificos de la clave 'concpeto' ")
+print("Valor en el indice 1 de la lista")
+print(conceptos_fisica['concepto'][1])
+concepto = conceptos_fisica['concepto'][2]
+print("Valos en el indice 2 de la lista")
+print(concepto)
