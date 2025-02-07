@@ -8,3 +8,8 @@ print()
 print("Diccionario conceptos de física con listas como valores ")
 print(conceptos_fisica)
 print()
+
+print("Acceder a los valores de las claves")
+print(conceptos_fisica['concepto'])
+print(conceptos_fisica['definicion'])
+print()
