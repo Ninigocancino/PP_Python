@@ -18,3 +18,8 @@ conceptos_fisica = {
 print()
 print(conceptos_fisica)
 print()
+
+print("Acceder al primer nivel de la clave 'elementales' ")
+elementales = conceptos_fisica['elementales']
+print(elementales)
+print()
