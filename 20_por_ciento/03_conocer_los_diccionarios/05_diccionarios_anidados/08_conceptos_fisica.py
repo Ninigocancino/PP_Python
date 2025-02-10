@@ -23,3 +23,8 @@ print("Acceder al primer nivel de la clave 'elementales' ")
 elementales = conceptos_fisica['elementales']
 print(elementales)
 print()
+
+print("Acceder al tercer nivel de la claves 'avanzados' ")
+avanzados = conceptos_fisica['avanzados']['avanzados']['entropia']
+print(avanzados)
+print()
