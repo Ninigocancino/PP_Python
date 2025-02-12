@@ -15,3 +15,9 @@ print("Acceder al primer diciconario de la lista")
 primer_diccionario = conceptos_fisica[0]
 print(primer_diccionario)
 print("")
+
+print("Acceder al valor de la clave 'Tipo' del ultimo diccionario")
+clave_tipo = conceptos_fisica[3]['Tipo']
+print(clave_tipo)
+print(conceptos_fisica[3]['Tipo'])
+print()
