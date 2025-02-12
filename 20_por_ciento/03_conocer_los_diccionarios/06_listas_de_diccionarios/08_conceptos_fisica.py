@@ -26,3 +26,10 @@ print("Agregar una nueva clave al diccionario 2")
 conceptos_fisica[2]['Nota'] = 'Bien'
 nueva_clave = conceptos_fisica[2]
 print(nueva_clave)
+print()
+
+print("Modificar el valor de la clave 'Nota' en el diccionario 2")
+conceptos_fisica[2]['Nota'] = 'Necesita más información'
+clave_modificada = conceptos_fisica[2]
+print(clave_modificada)
+print()
