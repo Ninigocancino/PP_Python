@@ -10,3 +10,8 @@ print()
 print("Lista de diccionarios 'conceptos_fisica' ")
 print(conceptos_fisica)
 print()
+
+print("Acceder al primer diciconario de la lista")
+primer_diccionario = conceptos_fisica[0]
+print(primer_diccionario)
+print("")
