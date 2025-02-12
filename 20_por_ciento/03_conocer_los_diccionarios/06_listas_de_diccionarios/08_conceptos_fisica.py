@@ -21,3 +21,8 @@ clave_tipo = conceptos_fisica[3]['Tipo']
 print(clave_tipo)
 print(conceptos_fisica[3]['Tipo'])
 print()
+
+print("Agregar una nueva clave al diccionario 2")
+conceptos_fisica[2]['Nota'] = 'Bien'
+nueva_clave = conceptos_fisica[2]
+print(nueva_clave)
