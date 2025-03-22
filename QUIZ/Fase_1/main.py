@@ -35,5 +35,16 @@ respuesta_2 = input("\n2. ¿Cuál es la capital de México?: ")
 if respuesta_2.lower() in ["ciudad de méxico", "cdmx", "méxico df"]:
     print("✅ ¡Excelente! +10 puntos")
     puntaje += 10
+    
 else:
     print("❌ Incorrecto. Es 'Ciudad de México'")
+
+#Pregunta 3 - Ciencias (Manejo de caracteres especiales)
+#-----------------------------------------------------------
+respuesta_3 = input("\n3. ¿Cuál es el animal nacional de México?: ")
+
+if respuesta_3.lower().strip() == "águila real":
+    print("✅ ¡Genial! +10 puntos")
+    puntaje += 10
+else: 
+    print("❌ Incorrecto. Es el 'Águila real'")
