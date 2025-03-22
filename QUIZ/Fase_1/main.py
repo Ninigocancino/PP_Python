@@ -35,7 +35,7 @@ respuesta_2 = input("\n2. ¿Cuál es la capital de México?: ")
 if respuesta_2.lower() in ["ciudad de méxico", "cdmx", "méxico df"]:
     print("✅ ¡Excelente! +10 puntos")
     puntaje += 10
-    
+
 else:
     print("❌ Incorrecto. Es 'Ciudad de México'")
 
@@ -48,3 +48,14 @@ if respuesta_3.lower().strip() == "águila real":
     puntaje += 10
 else: 
     print("❌ Incorrecto. Es el 'Águila real'")
+
+# Sección 3: Resultados finales
+
+print(f"\n⭐ Puntaje final: {puntaje}/50")
+
+if puntaje >= 40:
+    print("🏆 ¡Eres un genio! Sigue así 🎉")
+elif puntaje >= 20:
+    print("🏆 ¡Eres un genio! Sigue así 🎉")
+else:
+    print("🤔 Revise sus apuntes y vuelva a intentarlo") 
