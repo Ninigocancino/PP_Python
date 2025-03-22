@@ -27,3 +27,13 @@ if respuesta_1.lower() == "dia de la independencia":
     puntaje += 10
 else:
     print("❌ Incorrecto. La respuesta es 'dia de la independencia'")
+
+#Pregunta 2 - Geografía
+#------------------------------------------------------------
+respuesta_2 = input("\n2. ¿Cuál es la capital de México?: ")
+
+if respuesta_2.lower() in ["ciudad de méxico", "cdmx", "méxico df"]:
+    print("✅ ¡Excelente! +10 puntos")
+    puntaje += 10
+else:
+    print("❌ Incorrecto. Es 'Ciudad de México'")
