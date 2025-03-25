@@ -3,7 +3,9 @@
 """
 Fase 2 - Quiz dinámico 
 Novedades:
--Preguntas cargadas desde una lista de diccionarios
--Sistema escalable (añadir preguntas sin modificar lógica)
--Lectura de archivos csv (requiere archivo prentas.csv)
+-Preguntas almacenadas en una lista
+-Uso de ciclo for para iterar
+-Sistema escalable (añadir preguntas sin facilmente)
 """
+
+#
