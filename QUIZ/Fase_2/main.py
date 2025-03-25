@@ -17,3 +17,20 @@ preguntas = [
     ["\n5. ¿Cuál es la comida más conocida de Méxio", "tacos"]
 ]
 
+# Sección 2: Lógica principal
+puntaje = 0
+
+print("Bienvenido al Quiz. Ahora es dinámico! 🚀\nResponde las siguientes preguntas: ")
+
+for pregunta in preguntas:
+    texto_pregunta = pregunta[0]
+    respuesta_correcta = pregunta[1]
+
+    respuesta = input(texto_pregunta + " ").lower().strip()
+
+    if respuesta == respuesta_correcta:
+        print("✅ ¡Correcto! + 10 puntos")
+        puntaje +=10
+    else: 
+        print(f" Incorrecto. La respuesta es: {respuesta_correcta.title()}")
+
