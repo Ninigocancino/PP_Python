@@ -34,3 +34,7 @@ for pregunta in preguntas:
     else: 
         print(f" Incorrecto. La respuesta es: {respuesta_correcta.title()}")
 
+#Sección 3: Mostrar resultados
+
+total_preguntas = len(preguntas)
+print(f"\n⭐ Puntaje final: {puntaje}/{total_preguntas * 10}")
