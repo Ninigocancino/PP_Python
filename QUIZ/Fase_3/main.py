@@ -22,3 +22,24 @@ preguntas = [
         "pistas" : ["Tiene un zócalo famoso", "Es la ciudad más grande del país"]
     }
 ]
+
+# Sección 2: Lógica principal
+
+puntaje = 0
+estadisticas = {"Historia": 0, "Geografía": 0}
+
+for pregunta in preguntas:
+    texto = pregunta["texto"]
+    opciones_validas = pregunta["respuesta"]["opciones"]
+    tema = pregunta["respuesta"]["tema"]
+
+    respuesta = input(f"{texto} ").lower().strip()
+    if respuesta in opciones_validas:
+        print(f"✅ Correcto (+10 puntos) | Tema: {tema}")
+        puntaje += 10
+        estadisticas[tema] += 1
+    else: 
+        print(f"❌ Incorrecto. Pista: {pregunta["pistas"][0]}")
+        print(f"Respuesta válida: {', '.join(opciones_validas).title()}")
+
+
