@@ -42,4 +42,13 @@ for pregunta in preguntas:
         print(f"❌ Incorrecto. Pista: {pregunta["pistas"][0]}")
         print(f"Respuesta válida: {', '.join(opciones_validas).title()}")
 
+# Seccción 3: Manejo de dicionarios para generar un reporte final
+
+total_preguntas = len(preguntas)
+print(f"\n ⭐ Puntaje final: {puntaje}/{total_preguntas * 10}")
+
+print("\n🏅 Desempeño por tema: ")
+for tema, aciertos in estadisticas.items():
+    print(f"- {tema}: {aciertos}/{total_preguntas} aciertos")
+
 
