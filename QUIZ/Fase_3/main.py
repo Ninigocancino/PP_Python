@@ -20,35 +20,51 @@ preguntas = [
         "texto" : "\n2. ¿Cuál es la capital de México?",
         "respuesta" : {"opciones": ["ciudad de méxico", "cdmx"], "tema": "Geografía"},
         "pistas" : ["Tiene un zócalo famoso", "Es la ciudad más grande del país"]
-    }
+    },
+    {
+        "texto": "\n3. ¿En qué año llegó el hombre a la luna?",
+        "respuesta" : {"opciones": ["1969"], "tema": "Historia"},
+        "pistas" : ["Fue en la decada de los 60s", "Apolo 11"]
+     }
 ]
 
 # Sección 2: Lógica principal
 
 puntaje = 0
-estadisticas = {"Historia": 0, "Geografía": 0}
+estadisticas = {}
+
+for pregunta in preguntas:
+    tema = pregunta["respuesta"]["tema"]
+
+    if tema not in estadisticas:
+        estadisticas[tema] = {"aciertos": 0, "total": 0}
+    estadisticas[tema]["total"] += 1
+
+print("¡Bienvenido al Quiz con Estadísticas! 📊\nResponde las siguientes preguntas:")
 
 for pregunta in preguntas:
     texto = pregunta["texto"]
-    opciones_validas = pregunta["respuesta"]["opciones"]
+    opciones = pregunta["respuesta"]["opciones"]
     tema = pregunta["respuesta"]["tema"]
 
     respuesta = input(f"{texto} ").lower().strip()
-    if respuesta in opciones_validas:
+
+    if respuesta in opciones:
         print(f"✅ Correcto (+10 puntos) | Tema: {tema}")
         puntaje += 10
-        estadisticas[tema] += 1
-    else: 
-        print(f"❌ Incorrecto. Pista: {pregunta["pistas"][0]}")
-        print(f"Respuesta válida: {', '.join(opciones_validas).title()}")
+        estadisticas[tema]["aciertos"] += 1
+    else:
+        print(f"❌ Incorrecto. Pista: {pregunta['pistas'][0]}")
 
 # Seccción 3: Manejo de dicionarios para generar un reporte final
 
-total_preguntas = len(preguntas)
-print(f"\n ⭐ Puntaje final: {puntaje}/{total_preguntas * 10}")
+print(f"\n ⭐ Puntaje final: {puntaje}/{len(preguntas) * 10}")
 
 print("\n🏅 Desempeño por tema: ")
-for tema, aciertos in estadisticas.items():
-    print(f"- {tema}: {aciertos}/{total_preguntas} aciertos")
+for tema, datos in estadisticas.items():
+    aciertos = datos["aciertos"]
+    total_tema = datos["total"]
+    porcentaje = (aciertos / total_tema) *100 if total_tema > 0 else 0
+    print(f"- {tema}: {aciertos}/{total_tema} ({porcentaje:.1f}%)")
 
 
