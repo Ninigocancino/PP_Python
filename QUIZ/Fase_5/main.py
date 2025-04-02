@@ -8,3 +8,8 @@ Funcionalidades:
 -Interfaz con colores
 -Temporizador
 """
+
+import csv
+import time 
+from datetime import datetime 
+from colorama import Fore, Back, Style, init
