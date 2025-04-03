@@ -52,3 +52,29 @@ def guardar_resultados(puntaje, estadisticas, tiempo_total):
         archivo.write("Desempeño por tema:\n")
         for tema, datos in estadisticas.items():
             archivo.write(f"- {tema}: {datos['aciertos']}/{datos['total']}\n")
+
+# Sección 3: Ejecución del quiz
+
+def ejecutar_quiz(preguntas):
+    estadisticas = {}
+    puntaje = 0
+    inicio = time.time()  # Inicia el temporizador
+
+    print(Fore.CYAN + "\n¡COMIENZA EL QUIZ! 🚀")
+    for pregunta in preguntas:
+        tema = pregunta["respuesta"]["tema"]
+        if tema not in estadisticas:
+            estadisticas[tema] = {"aciertos": 0, "total": 0}
+        estadisticas[tema]["total"] += 1
+
+        respuesta = input(Fore.YELLOW + pregunta["texto"] + " ").lower().strip()
+        
+        if respuesta in pregunta["respuesta"]["opciones"]:
+            print(Fore.GREEN + "✅ Correcto (+10 puntos)")
+            puntaje += 10
+            estadisticas[tema]["aciertos"] += 1
+        else:
+            print(Fore.RED + f"❌ Incorrecto. Pista: {pregunta['pistas'][0]}")
+
+    tiempo_total = time.time() - inicio  # Calcula tiempo transcurrido
+    return puntaje, estadisticas, tiempo_total
