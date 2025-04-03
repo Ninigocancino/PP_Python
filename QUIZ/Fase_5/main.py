@@ -78,3 +78,31 @@ def ejecutar_quiz(preguntas):
 
     tiempo_total = time.time() - inicio  # Calcula tiempo transcurrido
     return puntaje, estadisticas, tiempo_total
+
+# Sección 3: Lógica principal
+
+def main():
+    preguntas = cargar_preguntas()
+    if not preguntas:
+        print(Fore.RED + "⚠️ Usando preguntas de respaldo...")
+        preguntas = [  # Preguntas por defecto
+            {
+                "texto": "\n1. ¿Qué celebra México el 16 de septiembre?",
+                "respuesta": {"opciones": ["independencia"], "tema": "Historia"},
+                "pistas": ["Evento patrio", "1810"]
+            }
+        ]
+
+    print(Fore.BLUE + "\n¡BIENVENIDO AL QUIZ DE PRIMARIA! 🌟")
+    puntaje, estadisticas, tiempo = ejecutar_quiz(preguntas)
+    
+    # Resultados en pantalla
+    print(Fore.CYAN + f"\n⭐ Puntaje final: {puntaje}/{len(preguntas)*10}")
+    print(Fore.CYAN + f"⏱️ Tiempo total: {tiempo:.2f} segundos")
+    
+    # Guardar en archivo
+    guardar_resultados(puntaje, estadisticas, tiempo)
+    print(Fore.GREEN + "\n📄 Resultados guardados en 'resultados.txt'")
+
+if __name__ == "__main__":
+    main()
