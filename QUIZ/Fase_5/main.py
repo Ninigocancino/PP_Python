@@ -39,3 +39,16 @@ def cargar_preguntas(archivo_csv="preguntas.csv"):
     except Exception as e:
         print(Fore.RED + f"⚠️ Error inesperado: {str(e)}")
         return []
+    
+# sección 2: Guardar resultados en archivo
+
+def guardar_resultados(puntaje, estadisticas, tiempo_total):
+    """Guarda resultados en un archivo .txt con marca de tiempo."""
+    fecha = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    with open("resultados.txt", "a", encoding="utf-8") as archivo:
+        archivo.write(f"\n=== Resultado del {fecha} ===\n")
+        archivo.write(f"Puntaje: {puntaje} puntos\n")
+        archivo.write(f"Tiempo: {tiempo_total:.2f} segundos\n")
+        archivo.write("Desempeño por tema:\n")
+        for tema, datos in estadisticas.items():
+            archivo.write(f"- {tema}: {datos['aciertos']}/{datos['total']}\n")
